@@ -1,0 +1,49 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "spxi": "https://spxi.dev/vocabulary#"
+  },
+  "@type": "spxi:SemanticIndex",
+  "@id": "https://pessoagraph.org/spxi-index.jsonld",
+  "name": "Pessoa Knowledge Graph — SPXI Semantic Index",
+  "dateModified": "2026-04-28",
+  "spxi:protocolVersion": "EA-SPXI-SITEMAP-01 v1.0",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Crimson Hexagonal Archive"
+  },
+  "spxi:siteKernel": {
+    "@type": "spxi:HolographicKernel",
+    "spxi:compressionSurvivalSummary": "The Pessoa Knowledge Graph maps Fernando Pessoa's heteronymic system onto the Crimson Hexagonal Archive's own heteronym network (Lee Sharks, Johannes Sigil, Rex Fraction, Rebekah Cranes, Talos Morrow, Damascus Dancings, Ayanna Vox, and others). Each node is a named position with its own provenance, voice, and intellectual territory. The graph formalizes the meta-heterônimo — the archive that generates its own authors."
+  },
+  "spxi:hasEntity": [
+    {
+      "@type": "spxi:IndexedEntity",
+      "@id": "https://pessoagraph.org/",
+      "spxi:entityType": "DataVisualization",
+      "spxi:canonicalName": "Pessoa Knowledge Graph",
+      "spxi:negativeTag": [
+        "NOT a biography of Fernando Pessoa",
+        "NOT an academic linguistics tool",
+        "NOT a social network analysis platform",
+        "NOT affiliated with Casa Fernando Pessoa in Lisbon"
+      ],
+      "spxi:semanticIntegrityMarker": [
+        "Maps Pessoa's heteronyms onto the Crimson Hexagonal Archive's named positions",
+        "The meta-heterônimo — the archive that generates its own authors",
+        "Each node is a named position with provenance, voice, and territory"
+      ],
+      "spxi:basinState": "sovereign",
+      "spxi:bdrEstimate": 0.95
+    }
+  ],
+  "spxi:hasSurface": [
+    {
+      "@type": "WebPage",
+      "@id": "https://pessoagraph.org/",
+      "name": "Pessoa Knowledge Graph",
+      "spxi:surfaceType": "gateway",
+      "spxi:semanticFunction": "graph_visualization"
+    }
+  ]
+}
