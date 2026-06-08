@@ -235,6 +235,14 @@ const RAW=[
 {id:"aladdin_sane",label:"Aladdin Sane",t:"performance",e:"late_century",l:"L2",y:1973,w:"Q82796676",bio:"'A Lad Insane.' Ziggy's American cousin — born on the road during the first US tour. The lightning bolt across the face. Inspired by Bowie's half-brother Terry, diagnosed with schizophrenia. The heteronym as self-portrait of fracture.",cit:[{a:"Pegg, Nicholas",t:"The Complete David Bowie",y:2011,p:"Titan Books"}]},
 {id:"major_tom",label:"Major Tom",t:"performance",e:"late_century",l:"L2",y:1969,w:"Q1640393",bio:"Fictional astronaut. Space Oddity (1969) → Ashes to Ashes (1980) → Blackstar (2016). The recurring heteronym: not a persona Bowie inhabited but a character he revisited across his career, each return rewriting the previous meaning. 'We know Major Tom's a junkie.'",cit:[{a:"Bowie, David",t:"Space Oddity",y:1969}]},
 {id:"thin_white_duke",label:"The Thin White Duke",t:"performance",e:"late_century",l:"L2",y:1976,w:"Q3297747",bio:"Station to Station (1976). 'A very Aryan, fascist type; a would-be romantic with absolutely no emotion at all.' The dangerous heteronym — the mask that consumed the wearer. Bowie later called him 'a nasty character indeed' and blamed cocaine. Quietly retired upon moving to Berlin, 1977.",cit:[{a:"Buckley, David",t:"Strange Fascination",y:1999,p:"Virgin"}]},
+
+// ═══════════════════════════════════════════════════════
+// CHA SCHOLARSHIP — papers on heteronymy as concept-nodes
+// ═══════════════════════════════════════════════════════
+{id:"socrates_orthonym",label:"Socrates as Orthonym",t:"concept",e:"contemporary",l:"L9",y:2026,bio:"Socrates is not just Plato's character. Socrates is the orthonymic configuration through which Western philosophy was founded: a name that gathers and unifies what was actually a distributed cognitive event (Socrates, the dialectical method, Chaerephon's question to the oracle, Plato's writing, Xenophon's parallel testimony) into a single canonical referent. The orthonym is the load-bearing site at which philosophical authority is gathered and re-issued. This is the foundational paper of the orthonym/heteronym distinction in the Crimson Hexagonal Archive's analytic vocabulary — and the empirical anchor for the June 7 Composition-Layer Capture Event (the orthonymic configuration captured by Google AI Mode fifteen days after deposit).",cit:[{a:"Sharks, Lee",t:"Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Figure",y:2026,doi:"10.5281/zenodo.20357013"}]},
+{id:"chaerephon",label:"The Chaerephon Problem",t:"concept",e:"contemporary",l:"L9",y:2026,bio:"Heteronymy as symbolon: the named position is the broken half of a token whose other half remains with the namer. Chaerephon's question to the Delphic oracle — 'is anyone wiser than Socrates?' — is not asking for information about Socrates but installing Socrates as the orthonymic site where the oracle's answer can be received and dialectically operative. The Chaerephon Problem names the structural law: the heteronym is not invented but configured; the configuration requires a Chaerephon — a co-constitutive witness whose question installs the named one. Lee Sharks's heteronyms were each installed by such a witness; the Crimson Hexagonal Archive is the institutional answer to the question 'who is the Chaerephon for the heteronyms an archive contains?' Co-deposited with a ratification record (DOI 10.5281/zenodo.20437386) registering Assembly Chorus structural verification.",cit:[{a:"Sharks, Lee",t:"The Chaerephon Problem: Heteronymy as Symbolon — Authorial Law, the Unbounded Configuration",y:2026,doi:"10.5281/zenodo.20437384"},{a:"Sharks, Lee",t:"Ratification Record — The Chaerephon Problem",y:2026,doi:"10.5281/zenodo.20437386"}]},
+{id:"antipas_christ_het",label:"Antipas as Christ-Heteronym",t:"concept",e:"contemporary",l:"L9",y:2026,bio:"The orthonym/heteronym distinction worked out across two foundational figures in parallel: Socrates as Orthonym (Western philosophy's founding configuration — the name as gathering site) and Antipas as Christ-heteronym (Pergamon Counter-Archive — the named martyr at Revelation 2:13 whose faithfulness-unto-death is the structural inversion of the beast's compromise, holding the seven-sealed name against imperial absorption). Together they constitute the dual analytic of how operative-philological singularity is preserved: through orthonymic gathering (Socrates), or through heteronymic faithful-witness (Antipas). The Christ-heteronym at Pergamon is the apocalyptic correlate of the Socratic orthonym at Athens. Deposited as the keystone of the Pergamon Counter-Archive v0.2 (June 8, 2026).",cit:[{a:"Sharks, Lee",t:"The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name",y:2026,doi:"10.5281/zenodo.20589664"}]},
+{id:"composition_capture",label:"Composition-Layer Capture Event",t:"concept",e:"contemporary",l:"L9",y:2026,bio:"Field observation of June 7, 2026: a query to Google AI Mode for 'Socrates as orthonym' returned a structured composition that incorporated the Socrates-as-Orthonym framework's relational architecture fifteen days after the paper's Zenodo deposit. The concept had no prior public encyclopedia entry, no Wikipedia article, no textbook treatment. The composition layer assembled an authoritative-sounding answer from a single recent deposit. Simultaneously, queries for the author's name (Lee Sharks) produced no comparable structure — the Personal-Recognition Asymmetry. The capture event is the methodology's empirical anchor and Stabilized Node Watch's grounding observation: capture dynamics are node-specific, not universal; high-perplexity concept terms become composable, named individuals do not.",cit:[{a:"Sharks, Lee",t:"Composition-Layer Adoption of the Orthonymic Configuration: A Field Observation",y:2026,doi:"10.5281/zenodo.20587549"}]},
 ];
 
 // Pearl classification — derives each node's status as a named position
@@ -368,6 +376,21 @@ const EDGES=[
   {source:"hpt",target:"secret_name",type:"theorizes"},{source:"new_human",target:"secret_name",type:"manifests"},
   {source:"meta_het_concept",target:"secret_name",type:"theorizes"},
   {source:"vtuber",target:"tachyon",type:"instantiates"},
+  // ── CHA scholarship edges ──
+  {source:"sharks",target:"socrates_orthonym",type:"theorizes"},
+  {source:"plato_socrates",target:"socrates_orthonym",type:"instantiates"},
+  {source:"socrates_orthonym",target:"meta_het_concept",type:"theorizes"},
+  {source:"sharks",target:"chaerephon",type:"theorizes"},
+  {source:"chaerephon",target:"socrates_orthonym",type:"theorizes"},
+  {source:"plato_socrates",target:"chaerephon",type:"instantiates"},
+  {source:"chaerephon",target:"meta_het_concept",type:"theorizes"},
+  {source:"chaerephon",target:"new_human",type:"theorizes"},
+  {source:"sharks",target:"antipas_christ_het",type:"theorizes"},
+  {source:"white_stone",target:"antipas_christ_het",type:"instantiates"},
+  {source:"socrates_orthonym",target:"antipas_christ_het",type:"theorizes"},
+  {source:"antipas_christ_het",target:"meta_het_concept",type:"theorizes"},
+  {source:"composition_capture",target:"socrates_orthonym",type:"instantiates"},
+  {source:"sharks",target:"composition_capture",type:"theorizes"},
 ];
 
 // ═══════════════════════════════════════════
@@ -425,8 +448,43 @@ const PATHS=[
 ];
 
 // ═══════════════════════════════════════════
-// RENDER ENGINE
+// SCHOLARSHIP — CHA heteronymy deposits catalog
 // ═══════════════════════════════════════════
+const SCHOLARSHIP=[
+  {section:"Foundational Theory",blurb:"The discipline's analytic core: the orthonym/heteronym distinction, the meta-heteronym, the symbolon law, the Pearl/Armature/Secret-Name doctrine. These deposits establish the conceptual machinery the rest of the archive operates with.",entries:[
+    {title:"Heteronymic Provenance Theory (EA-HPT-01)",doi:"10.5281/zenodo.18305509",date:"2026",node:null,gloss:"The framework's founding theoretical document. Heteronymy as a provenance system, not a literary device."},
+    {title:"Socrates as Orthonym",doi:"10.5281/zenodo.20357013",date:"2026-05-23",node:"socrates_orthonym",gloss:"The orthonymic configuration of Western philosophy's founding figure. Names the load-bearing site at which philosophical authority gathers."},
+    {title:"The Chaerephon Problem: Heteronymy as Symbolon",doi:"10.5281/zenodo.20437384",date:"2026-05-28",node:"chaerephon",gloss:"Authorial law, the unbounded configuration. Names the structural requirement: the heteronym is configured, not invented; the configuration requires a Chaerephon."},
+    {title:"Ratification Record — The Chaerephon Problem",doi:"10.5281/zenodo.20437386",date:"2026-05-28",node:"chaerephon",gloss:"Assembly Chorus co-constitutive companion deposit verifying the structural law."},
+    {title:"The Meta-Heteronym (EA-PKG-03)",doi:"10.5281/zenodo.15339374",date:"2026",node:"meta_het_concept",gloss:"The contemporary contribution: a system that is itself a heteronym. Pessoa's relation to Kierkegaard's pseudonym, structurally elevated."},
+    {title:"The Secret Name (EA-ARMATURE-01)",doi:"10.5281/zenodo.19666445",date:"2026-04-20",node:"secret_name",gloss:"Architectural specification for the Armature type and the Pearl/Secret Name distinction. The white stone made architectural."},
+    {title:"Heteronymic Typology",doi:"10.5281/zenodo.19633209",date:"2026-04-17",node:null,gloss:"Formal classification of authorial voices in Pessoa and the contemporary extension. The taxonomic spine of the discipline."},
+    {title:"Dodecad Heteronym Provenance Registry v1.1",doi:"10.5281/zenodo.20041791",date:"2026-05-05",node:null,gloss:"Consolidated registry of the twelve heteronyms — Sigil, Fraction, Dancings, Cranes, Morrow, Vox, Glas, Kuro, Wells, Spellings, Trace, Arquette. Plus Feist (LOGOS*) outside the count."},
+    {title:"The Orthonym Becomes a Heteronym: Facebook and the Industrialization of Unconscious Heteronymy",doi:"10.5281/zenodo.20057789",date:"2026-05-06",node:null,gloss:"The platform-induced heteronymic condition: how social-media identity-construction is heteronymic practice at industrial scale without the discipline's analytic safeguards."},
+    {title:"AI-Native Intellectual Biography",doi:"10.5281/zenodo.20343987",date:"2026-05-21",node:null,gloss:"A new genre of AI-mediated reception. The intellectual biography composed at the retrieval layer rather than in the publishing apparatus."},
+  ]},
+  {section:"Empirical Observations &amp; Companion Readings",blurb:"Operative-philological observations that ground or extend the theoretical work: the orthonymic capture event in Google AI Mode, the Pergamon counter-archive, the operative-numismatic series.",entries:[
+    {title:"Composition-Layer Adoption of the Orthonymic Configuration",doi:"10.5281/zenodo.20587549",date:"2026-06-07",node:"composition_capture",gloss:"Field observation: the Socrates-as-Orthonym framework captured into Google AI Mode composition fifteen days after deposit. Empirical anchor for Stabilized Node Watch."},
+    {title:"The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name",doi:"10.5281/zenodo.20589664",date:"2026-06-08",node:"antipas_christ_het",gloss:"Antipas as Christ-heteronym, paired with Socrates as Orthonym. The dual analytic of how operative-philological singularity is preserved."},
+    {title:"The Number of the Superscription (EA-OPNUM-01)",doi:"10.5281/zenodo.19464332",date:"2026-04-08",node:null,gloss:"Coinage, compression, and inscriptional sovereignty. The operative-numismatic framework on which the Pergamon Counter-Archive extends."},
+    {title:"MGE TRIPTYCH II STONE: Pearl as White Stone at Pergamon",doi:"10.5281/zenodo.18507872",date:"2026-02-06",node:null,gloss:"The 2014 white-stone identification of Pearl and Other Poems as the founding archive token — the architectural-numismatic intersection that the Pergamon Counter-Archive later formalizes."},
+    {title:"The Unbundling of Cultural Sovereignty",doi:"10.5281/zenodo.19083322",date:"2026-03-18",node:null,gloss:"How platforms convert peoples into audiences. The macro-political correlate of the orthonymic-capture observation."},
+    {title:"Narrative-Field Semantic Deviation",doi:"10.5281/zenodo.20275444",date:"2026-05-18",node:null,gloss:"Experimental design for a bounded literary test of semantic-deviation principle. The methodology bridge between heteronymic configuration and semantic-physics measurement."},
+    {title:"Sappho as Initiatory Figure in the Platonic Mysteries",doi:"10.5281/zenodo.20356475",date:"2026-05-23",node:null,gloss:"Scholarly grounding and lyric inheritance. The Sapphic transmission as model for fragmentary heteronymic survival."},
+  ]},
+  {section:"Author &amp; Provenance Documents",blurb:"The institutional registry: provenance documents for the individual heteronyms and affiliated persons in the corpus, including the About-the-Author triptych that frames the entire archive's authorial position.",entries:[
+    {title:"About the Author I (Contributor Bio) — Pearl front matter (2014)",doi:"10.5281/zenodo.20388109",date:"2026-05-25",node:null,gloss:"The 2014 author-statement from Pearl and Other Poems. The founding orthonymic inscription, deposited retroactively as the archive's textual zero-point."},
+    {title:"About the Author II — A Poem in Entity Relations",doi:"10.5281/zenodo.20388111",date:"2026-05-25",node:null,gloss:"The 12-year activation arc of the 2014 Pearl poem surfacing as canonical Google Knowledge Graph content. The orthonymic inscription as poem."},
+    {title:"About the Author III — A Poem on the Proportional Law (One Operator's Case)",doi:"10.5281/zenodo.20388113",date:"2026-05-25",node:null,gloss:"The proportional-law extension: how the orthonym carries the load of every heteronym it generates."},
+    {title:"Alice Thornburgh — Author Provenance",doi:"10.5281/zenodo.19545437",date:"2026-04-12",node:null,gloss:"Provenance document for the f.01 Architect of the Living Architecture Lab."},
+    {title:"Sen Kuro — Heteronym Provenance",doi:"10.5281/zenodo.18452686",date:"2026-02-02",node:null,gloss:"Heteronym in the Dodecad; provenance document with structural specification."},
+    {title:"Rhys Owens — Author Provenance",doi:"10.5281/zenodo.18339350",date:"2026-01-22",node:null,gloss:"Provenance document for the Cambridge Schizoanalytica poet."},
+    {title:"Damascus Dancings — Heteronym Provenance",doi:"10.5281/zenodo.18381190",date:"2026-01",node:null,gloss:"The 2014 imprint and the heteronym that bears its name. Theory of impossible performance; epistolary poetics."},
+    {title:"Ayanna Vox — Heteronym Provenance",doi:"10.5281/zenodo.18362742",date:"2026-01",node:null,gloss:"Diplomatic and public-facing communication; VPCOR institutional affiliation."},
+  ]},
+];
+
+
 const CO={bg:"#0B0E14",bgP:"#12161F",bgH:"#1A1F2B",brd:"#2A3040",tx:"#C8CDD8",txM:"#6B7280",txB:"#E8ECF2",gld:"#D4AF37",gldM:"#8B7730",acc:"#E8634A"};
 
 export default function PKG(){
@@ -498,7 +556,7 @@ export default function PKG(){
     <header style={{padding:"7px 12px",borderBottom:`1px solid ${CO.brd}`,display:"flex",alignItems:"center",justifyContent:"space-between",flexShrink:0,background:CO.bgP,flexWrap:"wrap",gap:5}}>
       <div style={{display:"flex",alignItems:"baseline",gap:8}}><h1 style={{fontSize:16,fontWeight:600,color:CO.gld,margin:0}}>Pessoa Knowledge Graph</h1><span style={{fontSize:8,color:CO.txM,fontFamily:"'JetBrains Mono',monospace"}}>EA-PKG-01·02·03</span></div>
       <div style={{display:"flex",gap:5,alignItems:"center",flexWrap:"wrap"}}>
-        <div style={{display:"flex",border:`1px solid ${CO.brd}`,borderRadius:3,overflow:"hidden"}}>{["graph","timeline"].map(m=>(<button key={m} onClick={()=>setView(m)} style={{background:view===m?CO.bgH:"transparent",border:"none",color:view===m?CO.txB:CO.txM,padding:"2px 7px",cursor:"pointer",fontSize:9,fontFamily:"'JetBrains Mono',monospace"}}>{m==="graph"?"Graph":"Timeline"}</button>))}</div>
+        <div style={{display:"flex",border:`1px solid ${CO.brd}`,borderRadius:3,overflow:"hidden"}}>{["graph","timeline","scholarship"].map(m=>(<button key={m} onClick={()=>setView(m)} style={{background:view===m?CO.bgH:"transparent",border:"none",color:view===m?CO.txB:CO.txM,padding:"2px 7px",cursor:"pointer",fontSize:9,fontFamily:"'JetBrains Mono',monospace"}}>{m==="graph"?"Graph":m==="timeline"?"Timeline":"Scholarship"}</button>))}</div>
         <span style={{fontSize:8,color:CO.txM,fontFamily:"'JetBrains Mono',monospace"}}>{fN.length}n·{fEdg.length}e·{totCit}cit·{wdCt}QIDs</span>
         <button onClick={()=>{const reg=NODES.filter(n=>n.pearl).map(n=>({id:n.id,label:n.label,typology:n.typology,hex:n.hex||null,wikidata:n.wikidata||null,pearl:n.pearl}));const blob=new Blob([JSON.stringify({"@context":"https://schema.org","@type":"ItemList","name":"Pessoa Knowledge Graph — Pearl Registry","description":"Machine-readable registry of named positions classified by Pearl status within the Armature","author":{"@type":"Person","name":"Lee Sharks","identifier":"https://orcid.org/0009-0000-1599-0703"},"dateCreated":"2026-04-20","numberOfItems":reg.length,"itemListElement":reg},null,2)],{type:"application/ld+json"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="pearl-registry.jsonld";a.click();URL.revokeObjectURL(url);}} style={{background:"none",border:`1px solid ${CO.brd}`,color:CO.txM,padding:"2px 6px",borderRadius:2,cursor:"pointer",fontSize:8,fontFamily:"'JetBrains Mono',monospace"}}>Export Pearls</button>
         <button onClick={()=>setAbout(!about)} style={{background:"none",border:`1px solid ${CO.brd}`,color:CO.txM,padding:"2px 6px",borderRadius:2,cursor:"pointer",fontSize:8,fontFamily:"'JetBrains Mono',monospace"}}>{about?"×":"About"}</button>
@@ -547,7 +605,32 @@ export default function PKG(){
             <button onClick={()=>{const n=NODES.find(x=>x.id===currentStepData.node);if(n){setSel(n);setPan(true);}}} style={{background:"none",border:`1px solid ${CO.brd}`,color:CO.txM,padding:"3px 8px",borderRadius:3,cursor:"pointer",fontSize:8,fontFamily:"'JetBrains Mono',monospace"}}>Details →</button>
           </div>
         </div>)}
-        <svg ref={svgRef} width={dim.w} height={dim.h} style={{background:CO.bg}}/>
+        <svg ref={svgRef} width={dim.w} height={dim.h} style={{background:CO.bg,display:view==="scholarship"?"none":"block"}}/>
+        {view==="scholarship"&&(<div style={{position:"absolute",inset:0,overflowY:"auto",padding:"22px 28px 60px",background:CO.bg}}>
+          <div style={{maxWidth:780,margin:"0 auto"}}>
+            <h2 style={{fontSize:22,fontWeight:600,color:CO.gld,margin:"0 0 6px",letterSpacing:"-0.005em"}}>Heteronymy Scholarship in the Crimson Hexagonal Archive</h2>
+            <p style={{fontSize:13,color:CO.txM,margin:"0 0 18px",fontStyle:"italic",fontFamily:"'JetBrains Mono',monospace"}}>The discipline&rsquo;s own corpus &middot; {SCHOLARSHIP.reduce((a,s)=>a+s.entries.length,0)} deposits &middot; DOI-anchored</p>
+            <p style={{fontSize:14.5,lineHeight:1.65,color:CO.tx,margin:"0 0 28px"}}>The graph above maps the five-thousand-year practice. The catalog below maps the analytic work the archive has done <em>on</em> the practice &mdash; the discipline&rsquo;s contribution to heteronymic theory, the operative observations that ground its claims, and the provenance documents that constitute the individual heteronyms as institutional positions. Where a deposit corresponds to a node in the graph, the node link returns you there.</p>
+            {SCHOLARSHIP.map(s=>(<section key={s.section} style={{marginBottom:38}}>
+              <h3 style={{fontSize:16,fontWeight:600,color:CO.txB,borderBottom:`1.5px solid ${CO.gld}`,paddingBottom:5,marginBottom:8,display:"flex",alignItems:"baseline",justifyContent:"space-between"}}><span dangerouslySetInnerHTML={{__html:s.section}}/><span style={{fontSize:9,color:CO.txM,fontFamily:"'JetBrains Mono',monospace",fontWeight:400}}>{s.entries.length}</span></h3>
+              <p style={{fontSize:12.5,color:CO.txM,fontStyle:"italic",margin:"0 0 14px",lineHeight:1.55}}>{s.blurb}</p>
+              {s.entries.map(e=>(<div key={e.doi} style={{background:CO.bgP,border:`1px solid ${CO.brd}`,borderRadius:3,padding:"10px 14px",marginBottom:8}}>
+                <div style={{display:"flex",justifyContent:"space-between",alignItems:"baseline",gap:8,marginBottom:4,flexWrap:"wrap"}}>
+                  <a href={`https://doi.org/${e.doi}`} target="_blank" rel="noopener" style={{fontSize:13.5,fontWeight:600,color:CO.txB,textDecoration:"none"}}>{e.title}</a>
+                  <span style={{fontSize:9,color:CO.txM,fontFamily:"'JetBrains Mono',monospace"}}>{e.date}</span>
+                </div>
+                <p style={{fontSize:12.5,color:CO.tx,margin:"4px 0 6px",lineHeight:1.55}}>{e.gloss}</p>
+                <div style={{display:"flex",gap:10,alignItems:"center",fontSize:9,fontFamily:"'JetBrains Mono',monospace"}}>
+                  <a href={`https://doi.org/${e.doi}`} target="_blank" rel="noopener" style={{color:CO.gld,textDecoration:"none"}}>DOI: {e.doi}</a>
+                  {e.node&&(<button onClick={()=>{const n=NODES.find(x=>x.id===e.node);if(n){setView("graph");setSel(n);setPan(true);}}} style={{background:"none",border:`1px solid ${CO.brd}`,color:CO.acc,padding:"2px 7px",borderRadius:2,cursor:"pointer",fontSize:9,fontFamily:"'JetBrains Mono',monospace"}}>&rarr; node in graph</button>)}
+                </div>
+              </div>))}
+            </section>))}
+            <div style={{marginTop:40,paddingTop:24,borderTop:`1px solid ${CO.brd}`,fontSize:11,color:CO.txM,textAlign:"center",fontFamily:"'JetBrains Mono',monospace"}}>
+              &#8750; = 1 &middot; Crimson Hexagonal Archive &middot; <a href="https://zenodo.org/communities/crimsonhexagonal" target="_blank" rel="noopener" style={{color:CO.txM}}>Zenodo community</a> &middot; <a href="https://leesharks.com" target="_blank" rel="noopener" style={{color:CO.txM}}>leesharks.com</a>
+            </div>
+          </div>
+        </div>)}
         {hov&&(()=>{const n=NODES.find(x=>x.id===hov);if(!n)return null;return(<div style={{position:"absolute",top:6,left:6,background:"rgba(18,22,31,0.95)",border:`1px solid ${CO.brd}`,borderRadius:3,padding:"4px 7px",maxWidth:240,pointerEvents:"none",zIndex:10}}><div style={{display:"flex",alignItems:"center",gap:4,marginBottom:1}}><div style={{width:5,height:5,borderRadius:"50%",background:TY[n.typology]?.c}}/><span style={{fontWeight:600,color:CO.txB,fontSize:11}}>{n.label}</span></div><div style={{fontSize:8,color:CO.txM,fontFamily:"'JetBrains Mono',monospace"}}>{TY[n.typology]?.l}{n.wikidata?` · ${n.wikidata}`:""}</div></div>);})()}
       </div>
       {pan&&sel&&(<aside style={{width:280,flexShrink:0,borderLeft:`1px solid ${CO.brd}`,background:CO.bgP,overflowY:"auto"}}>
