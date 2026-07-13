@@ -1,0 +1,29 @@
+{
+  "surface_id": "pessoagraph.org",
+  "canonical_url": "https://pessoagraph.org/",
+  "axn": "AXN:0215.GOVERNANCE.🏴🕒🤲🌌🎲●",
+  "deposit_number": 668,
+  "title": "The Pessoa Knowledge Graph · EA-PKG-01 v1.0",
+  "object_state": "canonical",
+  "tier": 1,
+  "register": "narrative",
+  "skin": {},
+  "doors": [
+    {
+      "label": "Read the graph spec",
+      "href": "https://www.alexanarch.org/s/records/668/"
+    },
+    {
+      "label": "Read the post-Pessoa framing",
+      "href": "https://www.alexanarch.org/s/records/666/"
+    },
+    {
+      "label": "Enter the archive",
+      "href": "https://www.alexanarch.org/"
+    }
+  ],
+  "index_files": [
+    "index.html"
+  ],
+  "notes": "Tier 1 mechanical. Nuclei pending Session C."
+}
