@@ -548,12 +548,12 @@ const SCHOLARSHIP=[
 const CO={bg:"#0B0E14",bgP:"#12161F",bgH:"#1A1F2B",brd:"#2A3040",tx:"#C8CDD8",txM:"#6B7280",txB:"#E8ECF2",gld:"#D4AF37",gldM:"#8B7730",acc:"#E8634A"};
 
 export default function PKG(){
-  const svgRef=useRef(null);const[sel,setSel]=useState(null);const[hov,setHov]=useState(null);const[fT,setFT]=useState(null);const[fE,setFE]=useState(null);const[fL,setFL]=useState(null);const[sq,setSQ]=useState("");const[dim,setDim]=useState({w:900,h:700});const cRef=useRef(null);const[pan,setPan]=useState(false);const[about,setAbout]=useState(false);const[view,setView]=useState("graph");
+  const svgRef=useRef(null);const[sel,setSel]=useState(null);const[hov,setHov]=useState(null);const[fT,setFT]=useState(null);const[fE,setFE]=useState(null);const[fL,setFL]=useState(null);const[sq,setSQ]=useState("");const[dim,setDim]=useState({w:900,h:700});const cRef=useRef(null);const[pan,setPan]=useState(false);const[lcol,setLcol]=useState(false);const[narrow,setNarrow]=useState(typeof window!=="undefined"&&window.innerWidth<900);const[about,setAbout]=useState(false);const[view,setView]=useState("graph");
   const[activePath,setActivePath]=useState(null);const[pathStep,setPathStep]=useState(0);
   const currentPath=PATHS.find(p=>p.id===activePath);
   const currentStepData=currentPath?.steps[pathStep];
   const pathNodeIds=currentPath?new Set(currentPath.steps.map(s=>s.node)):null;
-  useEffect(()=>{const m=()=>{if(cRef.current){const r=cRef.current.getBoundingClientRect();setDim({w:r.width,h:r.height});}};m();window.addEventListener("resize",m);return()=>window.removeEventListener("resize",m);},[]);
+  useEffect(()=>{const m=()=>{if(cRef.current){const r=cRef.current.getBoundingClientRect();setDim({w:r.width,h:r.height});}};m();const nw=()=>setNarrow(window.innerWidth<900);nw();window.addEventListener("resize",m);window.addEventListener("resize",nw);return()=>{window.removeEventListener("resize",m);window.removeEventListener("resize",nw);};},[lcol,pan,narrow]);
   const{fN,fEdg}=useMemo(()=>{let fn=NODES;if(fT)fn=fn.filter(n=>n.typology===fT);if(fE)fn=fn.filter(n=>n.era===fE);if(fL)fn=fn.filter(n=>n.layer===fL);if(sq){const q=sq.toLowerCase();fn=fn.filter(n=>n.label.toLowerCase().includes(q)||(n.bio&&n.bio.toLowerCase().includes(q)));}const ids=new Set(fn.map(n=>n.id));return{fN:fn,fEdg:EDGES.filter(e=>ids.has(e.source)&&ids.has(e.target))};},[fT,fE,fL,sq]);
 
   useEffect(()=>{
@@ -627,8 +627,12 @@ export default function PKG(){
       <p style={{margin:"0 0 5px"}}>Pharaonic titulary (~2600 BCE) → covenant naming → prophetic possession → the white stone of Revelation → apostolic renaming → monastic naming → Sufi takhallus → Chinese hao → Noh → commedia → Shakespeare → Browning → Kierkegaard → Pessoa → Bowie → DOOM → the avatar, the pronoun, the chosen name. One continuous technology. Pessoa formalized it. He did not invent it. The contemporary extension — New Human — contributes the meta-heteronym: a system that is itself a heteronym, generating further heteronyms. Not a person who creates persons, but a constructed world whose own existence is heteronymic.</p>
       <p style={{margin:0,fontSize:9,color:CO.txM}}>Lee Sharks · ORCID 0009-0000-1599-0703 · CHA · CC BY 4.0 · HPT DOI: 10.5281/zenodo.18305509</p>
     </div>)}
-    <div style={{display:"flex",flex:1,overflow:"hidden"}}>
-      <aside style={{width:185,flexShrink:0,borderRight:`1px solid ${CO.brd}`,background:CO.bgP,overflowY:"auto",padding:"5px 0",fontSize:9}}>
+    <div style={{display:"flex",flex:1,overflow:"hidden",position:"relative"}}>
+      {/* COLLAPSE RAIL — both columns are flexShrink:0, so at 185+280 the graph got
+          whatever was left, which on a narrow viewport is nothing. Toggles are always
+          visible; when narrow the panels OVERLAY the graph instead of squeezing it. */}
+      <button onClick={()=>setLcol(!lcol)} title={lcol?"Show filters":"Hide filters"} style={{position:"absolute",left:lcol?4:(narrow?4:161),top:6,zIndex:40,width:20,height:20,lineHeight:"18px",textAlign:"center",background:CO.bgP,border:`1px solid ${CO.brd}`,borderRadius:3,color:CO.gld,cursor:"pointer",fontSize:11,padding:0}}>{lcol?"\u203a":"\u2039"}</button>
+      <aside style={{width:lcol?0:185,flexShrink:0,borderRight:lcol?"none":`1px solid ${CO.brd}`,background:CO.bgP,overflowY:"auto",padding:lcol?0:"5px 0",fontSize:9,display:lcol?"none":"block",position:(narrow&&!lcol)?"absolute":"relative",left:0,top:0,bottom:0,zIndex:30,boxShadow:(narrow&&!lcol)?"2px 0 12px rgba(0,0,0,.5)":"none"}}>
         {/* GUIDED PATHS */}
         <div style={{padding:"4px 7px 6px",borderBottom:`1px solid ${CO.brd}`,marginBottom:4}}>
           <div style={{fontSize:8,textTransform:"uppercase",letterSpacing:"0.1em",color:CO.gld,marginBottom:4,fontWeight:600}}>Guided Paths</div>
@@ -693,7 +697,8 @@ export default function PKG(){
         </div>)}
         {hov&&(()=>{const n=NODES.find(x=>x.id===hov);if(!n)return null;return(<div style={{position:"absolute",top:6,left:6,background:"rgba(18,22,31,0.95)",border:`1px solid ${CO.brd}`,borderRadius:3,padding:"4px 7px",maxWidth:240,pointerEvents:"none",zIndex:10}}><div style={{display:"flex",alignItems:"center",gap:4,marginBottom:1}}><div style={{width:5,height:5,borderRadius:"50%",background:TY[n.typology]?.c}}/><span style={{fontWeight:600,color:CO.txB,fontSize:11}}>{n.label}</span></div><div style={{fontSize:8,color:CO.txM,fontFamily:"'JetBrains Mono',monospace"}}>{TY[n.typology]?.l}{n.wikidata?` · ${n.wikidata}`:""}</div></div>);})()}
       </div>
-      {pan&&sel&&(<aside style={{width:280,flexShrink:0,borderLeft:`1px solid ${CO.brd}`,background:CO.bgP,overflowY:"auto"}}>
+      {sel&&!pan&&(<button onClick={()=>setPan(true)} title="Show detail" style={{position:"absolute",right:4,top:6,zIndex:40,width:20,height:20,lineHeight:"18px",textAlign:"center",background:CO.bgP,border:`1px solid ${CO.brd}`,borderRadius:3,color:CO.gld,cursor:"pointer",fontSize:11,padding:0}}>{"\u2039"}</button>)}
+      {pan&&sel&&(<aside style={{width:280,flexShrink:0,borderLeft:`1px solid ${CO.brd}`,background:CO.bgP,overflowY:"auto",position:narrow?"absolute":"relative",right:0,top:0,bottom:0,zIndex:30,boxShadow:narrow?"-2px 0 12px rgba(0,0,0,.5)":"none"}}><button onClick={()=>setPan(false)} title="Collapse panel" style={{position:"absolute",left:4,top:6,zIndex:41,width:20,height:20,lineHeight:"18px",textAlign:"center",background:CO.bgP,border:`1px solid ${CO.brd}`,borderRadius:3,color:CO.gld,cursor:"pointer",fontSize:11,padding:0}}>{"\u203a"}</button>
         <div style={{padding:"10px 10px 7px",borderBottom:`1px solid ${CO.brd}`}}>
           <div style={{display:"flex",justifyContent:"space-between"}}><div><div style={{display:"flex",alignItems:"center",gap:5,marginBottom:2}}><div style={{width:7,height:7,borderRadius:"50%",background:TY[sel.typology]?.c}}/><h2 style={{margin:0,fontSize:14,fontWeight:600,color:CO.txB}}>{sel.label}</h2></div><div style={{fontSize:9,color:TY[sel.typology]?.c,fontFamily:"'JetBrains Mono',monospace"}}>{TY[sel.typology]?.l}</div></div><button onClick={()=>{setSel(null);setPan(false);}} style={{background:"none",border:"none",color:CO.txM,cursor:"pointer",fontSize:14,padding:0}}>×</button></div>
           <div style={{marginTop:3,fontSize:8,color:CO.txM,fontFamily:"'JetBrains Mono',monospace"}}>{sel.birth&&<span>b.{sel.birth}</span>}{sel.death&&<span> · d.{sel.death}</span>}{sel.birthplace&&<span> · {sel.birthplace}</span>}{sel.hex&&<span style={{color:"#FF8C42"}}> · {sel.hex}</span>}{sel.wikidata?<span> · <a href={`https://www.wikidata.org/wiki/${sel.wikidata}`} target="_blank" rel="noopener" style={{color:CO.gld,textDecoration:"none"}}>{sel.wikidata}</a></span>:<span style={{color:CO.acc}}> · No QID</span>}</div>
