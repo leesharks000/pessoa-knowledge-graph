@@ -585,17 +585,24 @@ export default function PKG(){
       const nwy=nodes.filter(n=>n.yearAnchor!=null);if(!nwy.length)return;
       // Era breakpoints and proportional allocation
       const bp=[-2700,-500,500,1400,1800,1900,1940,2000,2030];
-      const rng=[50];const total=w-80;const weights=[14,14,12,12,12,12,12,12];
+      /* THE TIMELINE WAS LAID OUT AT EXACTLY VIEWPORT WIDTH, so d3.zoom could only
+   shrink it — zooming out made every label smaller and moved nothing apart. It
+   now lays out on a VIRTUAL CANVAS wider than the viewport (about 2.2x, floor
+   2400px), and the initial transform scales that canvas down to fit. Zooming out
+   from there reveals the extra width the layout already has. */
+const TLW=Math.max(2400,w*2.2);const rng=[50];const total=TLW-80;const weights=[14,14,12,12,12,12,12,12];
       weights.forEach(wt=>{rng.push(rng[rng.length-1]+(total*wt/100));});
       const x=d3.scaleLinear().domain(bp).range(rng).clamp(true);
-      const axY=h/2;g.append("line").attr("x1",40).attr("y1",axY).attr("x2",w-20).attr("y2",axY).attr("stroke",CO.brd);
+      const axY=h/2;g.append("line").attr("x1",40).attr("y1",axY).attr("x2",TLW-20).attr("y2",axY).attr("stroke",CO.brd);
       // Era bands with labels
       const eraLabels=[{s:-2700,e:-500,l:"Deep Ancient",c:"#CD853F"},{s:-500,e:500,l:"Classical",c:"#A0522D"},{s:500,e:1400,l:"Medieval",c:"#8B7355"},{s:1400,e:1800,l:"Early Modern",c:"#6B8E23"},{s:1800,e:1900,l:"19th C.",c:"#7EB5A6"},{s:1900,e:1940,l:"Pessoa",c:"#E8634A"},{s:1940,e:2000,l:"Mid-Late C.",c:"#C77DBA"},{s:2000,e:2030,l:"Contemporary",c:"#F0C75E"}];
       eraLabels.forEach(eb=>{const x1=x(eb.s),x2=x(eb.e);g.append("rect").attr("x",x1).attr("y",35).attr("width",x2-x1).attr("height",h-70).attr("fill",eb.c).attr("fill-opacity",0.04);g.append("text").attr("x",(x1+x2)/2).attr("y",46).attr("text-anchor","middle").attr("font-size","8px").attr("fill",eb.c).attr("fill-opacity",0.5).attr("font-family","'JetBrains Mono',monospace").text(eb.l);g.append("line").attr("x1",x1).attr("y1",35).attr("x2",x1).attr("y2",h-35).attr("stroke",eb.c).attr("stroke-opacity",0.1);});
       // Tick marks at significant dates
       const tks=[-2600,-1800,-800,-600,-380,-50,30,95,530,700,1100,1260,1375,1550,1600,1680,1750,1832,1855,1880,1900,1914,1935,1960,1975,1990,2000,2014,2026];
       tks.forEach(t=>{const tx=x(t);g.append("line").attr("x1",tx).attr("y1",axY-4).attr("x2",tx).attr("y2",axY+4).attr("stroke",CO.brd).attr("stroke-width",0.4);g.append("text").attr("x",tx).attr("y",axY+14).attr("text-anchor","middle").attr("font-size","6px").attr("fill",CO.txM).attr("fill-opacity",0.7).attr("font-family","'JetBrains Mono',monospace").text(t<0?`${Math.abs(t)} BCE`:t);});
-      const pos=nwy.map((n,i)=>{const nx=x(n.yearAnchor);let hash=0;for(let c=0;c<n.id.length;c++)hash=((hash<<5)-hash)+n.id.charCodeAt(c);const lo=n.layer==="L10"?5:n.layer==="L5"?-5:n.layer==="L9"?3:0;const band=((Math.abs(hash)%12)-6)+lo;const ny=axY+band*20+(i%3-1)*6;return{...n,nx,ny};});
+      const pos=nwy.map((n,i)=>{const nx=x(n.yearAnchor);let hash=0;for(let c=0;c<n.id.length;c++)hash=((hash<<5)-hash)+n.id.charCodeAt(c);const lo=n.layer==="L10"?5:n.layer==="L5"?-5:n.layer==="L9"?3:0;const band=((Math.abs(hash)%12)-6)+lo;/* Band gap scaled to available height: the old fixed 20px held every node in a
+   240px ribbon however tall the screen, which is where the crowding came from. */
+const gap=Math.max(18,Math.min(46,(h-150)/13));const ny=axY+band*gap+(i%3-1)*(gap*0.3);return{...n,nx,ny};});
       const em={};pos.forEach(n=>{em[n.id]=n;});
       fEdg.forEach(e=>{const s=em[e.source],t=em[e.target];if(s&&t)g.append("line").attr("x1",s.nx).attr("y1",s.ny).attr("x2",t.nx).attr("y2",t.ny).attr("stroke",ET[e.type]?.c||"#333").attr("stroke-width",0.4).attr("stroke-dasharray",ET[e.type]?.d||"").attr("stroke-opacity",0.1);});
       const nodeG=g.selectAll(".tn").data(pos).join("g").attr("class","tn").attr("transform",d=>`translate(${d.nx},${d.ny})`).attr("cursor","pointer");
@@ -603,7 +610,7 @@ export default function PKG(){
       nodeG.append("text").text(d=>d.label).attr("x",d=>rad(d.id)+3).attr("y",3).attr("font-size",d=>(d.id==="pessoa"||d.id==="sharks")?"9px":"6.5px").attr("fill",CO.tx).attr("font-family","'Crimson Pro','Georgia',serif").attr("pointer-events","none");
       nodeG.on("click",(e,d)=>{e.stopPropagation();const full=NODES.find(n=>n.id===d.id);setSel(full||d);setPan(true);});
       svg.on("click",()=>{setSel(null);setPan(false);});
-      setTimeout(()=>{svg.call(d3.zoom().scaleExtent([0.1,6]).on("zoom",ev=>g.attr("transform",ev.transform)).transform,d3.zoomIdentity.translate(10,0).scale(0.85));},200);
+      setTimeout(()=>{const k=Math.min(1,(w-20)/TLW);svg.call(d3.zoom().scaleExtent([0.08,6]).on("zoom",ev=>g.attr("transform",ev.transform)).transform,d3.zoomIdentity.translate(10,h/2-(h/2)*k).scale(k));},200);
     }
   },[fN,fEdg,dim,view,activePath,pathStep]);
 
