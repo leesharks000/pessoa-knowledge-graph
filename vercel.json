@@ -1,10 +1,18 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+ "cleanUrls": true,
+ "trailingSlash": false,
+ "rewrites": [
+  {
+   "source": "/llms.txt",
+   "destination": "/llms.txt"
+  },
+  {
+   "source": "/robots.txt",
+   "destination": "/robots.txt"
+  },
+  {
+   "source": "/(.*)",
+   "destination": "/index.html"
+  }
+ ]
 }
