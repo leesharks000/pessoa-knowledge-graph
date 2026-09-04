@@ -1,10 +1,23 @@
 {
- "cleanUrls": true,
- "trailingSlash": false,
- "rewrites": [
-  {
-   "source": "/((?!.*\\.).*)",
-   "destination": "/index.html"
-  }
- ]
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/((?!.*\\.).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "pessoagraph.org"
+        }
+      ],
+      "destination": "https://www.pessoagraph.org/:path*",
+      "permanent": true
+    }
+  ]
 }
