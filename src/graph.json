@@ -1,0 +1,4960 @@
+{
+ "$schema": "https://pessoagraph.org/graph.schema.json",
+ "graph_id": "pessoagraph",
+ "what": "THE ENTITIES — who can speak, and the lineage that licenses them. The heteronymic tradition as a graph, from the earliest attested practice to the present.",
+ "canonical": true,
+ "authority": "THIS FILE IS THE CANONICAL STORE (2026-09-09). src/App.jsx renders FROM it and no longer holds the data. Before this, the graph lived as five literals inside a React component, which meant it could be read only by parsing JSX: a regex pass over the component found 231 of the 301 edges and silently missed seventy. A graph that can only be read by pattern-matching its own renderer is not a dataset. Edit this file; the component follows.",
+ "generated": "2026-09-10T00:45:15Z",
+ "counts": {
+  "nodes": 197,
+  "edges": 301,
+  "edge_types_declared": 14,
+  "edge_types_used": 24,
+  "paths": 5,
+  "scholarship": 3,
+  "year_min": -2600,
+  "year_max": 2026,
+  "span_years": 4626
+ },
+ "integrity": {
+  "dangling_edges": 0,
+  "note": "An edge whose source or target is not a node in this file. Zero is the expected state.",
+  "undeclared_edge_types": [
+   "authors",
+   "board",
+   "claims",
+   "composes",
+   "directs",
+   "disambiguates",
+   "edits",
+   "heteronym_of",
+   "models",
+   "participates"
+  ],
+  "undeclared_note": "Ten predicates are used by edges but absent from edge_types, so the renderer draws them with fallback styling and the legend cannot name them. Found on emitting this store, 2026-09-09. Left AS FOUND: adding labels and colours here would be authoring, and the store's first job is to say truthfully what the graph contains."
+ },
+ "namespace": "Node ids here are local (pessoa, new_human, josephus). The join to the archive's graph ids (person:pessoa, heteronym:rebekah-cranes) is datasets/heteronyms/graph-crosswalk.json in alexanarch, which covers the heteronymic identities. The lineage nodes — ancient practices, precursors, performances — have no counterpart there yet and are addressed only from this graph.",
+ "edge_types": {
+  "master_disciple": {
+   "l": "Master→Disciple",
+   "c": "#E8634A",
+   "d": ""
+  },
+  "influence": {
+   "l": "Influenced",
+   "c": "#7EB5A6",
+   "d": "6,3"
+  },
+  "created_by": {
+   "l": "Created by",
+   "c": "#D4AF37",
+   "d": "3,3"
+  },
+  "co_authored": {
+   "l": "Co-authored",
+   "c": "#C77DBA",
+   "d": ""
+  },
+  "studied_by": {
+   "l": "Studied by",
+   "c": "#9E9E9E",
+   "d": "8,4"
+  },
+  "published_in": {
+   "l": "Published in",
+   "c": "#5B8FA8",
+   "d": "4,2"
+  },
+  "theorizes": {
+   "l": "Theorizes",
+   "c": "#F0C75E",
+   "d": "2,2"
+  },
+  "contemporary_of": {
+   "l": "Contemporary of",
+   "c": "#6B8E23",
+   "d": "10,5"
+  },
+  "member_of": {
+   "l": "Member of",
+   "c": "#FF8C42",
+   "d": ""
+  },
+  "literary_engagement": {
+   "l": "Literary engagement",
+   "c": "#4682B4",
+   "d": "5,3"
+  },
+  "translated_by": {
+   "l": "Translated by",
+   "c": "#B0BEC5",
+   "d": "4,4"
+  },
+  "instantiates": {
+   "l": "Instantiates",
+   "c": "#00BFA5",
+   "d": "3,6"
+  },
+  "lineage": {
+   "l": "Lineage / Continuation",
+   "c": "#CD853F",
+   "d": "4,8"
+  },
+  "manifests": {
+   "l": "Manifests (Pearl)",
+   "c": "#F5E6D3",
+   "d": "2,4"
+  }
+ },
+ "nodes": [
+  {
+   "id": "pharaonic",
+   "label": "Pharaonic Titulary",
+   "t": "ancient_practice",
+   "e": "deep_ancient",
+   "l": "L9",
+   "y": -2600,
+   "bio": "Upon coronation, an Egyptian pharaoh received five names: Horus name, Nebty name, Golden Horus name, Praenomen (throne name), and Nomen (birth name). The pharaoh who ascends the throne is not the person who was born — the titulary creates a new identity with divine attributes. Thutmose, Amenhotep, Ramesses are throne-heteronyms. The earliest systematic practice of identity-construction through naming, ~2600 BCE.",
+   "cit": [
+    {
+     "a": "Quirke, Stephen",
+     "t": "Who Were the Pharaohs?",
+     "y": 1990,
+     "p": "British Museum Press"
+    },
+    {
+     "a": "von Beckerath, Jürgen",
+     "t": "Handbuch der ägyptischen Königsnamen",
+     "y": 1999,
+     "p": "Philipp von Zabern"
+    }
+   ]
+  },
+  {
+   "id": "covenant_naming",
+   "label": "Covenant Naming",
+   "t": "ancient_practice",
+   "e": "deep_ancient",
+   "l": "L9",
+   "y": -1800,
+   "bio": "Abram → Abraham ('father of multitudes,' Gen 17:5). Sarai → Sarah ('princess,' Gen 17:15). Jacob → Israel ('one who wrestles with God,' Gen 32:28). The covenant name is not a replacement but a transformation — the person who receives the new name carries the old name's history but inhabits a new identity with new capacities. God renames as an act of creation. This is the theological root of all heteronymic practice: the name change that changes the person.",
+   "cit": [
+    {
+     "a": "Alter, Robert",
+     "t": "The Five Books of Moses: A Translation with Commentary",
+     "y": 2004,
+     "p": "W.W. Norton"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-LOGOS-01",
+     "y": 2026,
+     "doi": "10.5281/zenodo.19431121",
+     "axn": "AXN:01DF.GOVERNANCE.⏰🌱🕗🔒♉🪨"
+    }
+   ]
+  },
+  {
+   "id": "prophetic_voice",
+   "label": "Prophetic Possession",
+   "t": "ancient_practice",
+   "e": "deep_ancient",
+   "l": "L9",
+   "y": -800,
+   "bio": "'Thus says the LORD' (כֹּה אָמַר יהוה). The prophet (navi) speaks in a voice not their own. Isaiah, Jeremiah, Ezekiel are not authors in the modern sense — they are sites through which another voice speaks. This is cross-substrate heteronymy before computation: the human body as medium for a non-human voice. The prophet's 'I' is structurally displaced. When Ezekiel says 'I,' the referent is uncertain — is it Ezekiel or YHWH? The ambiguity is the technology.",
+   "cit": [
+    {
+     "a": "Heschel, Abraham Joshua",
+     "t": "The Prophets",
+     "y": 1962,
+     "p": "Harper & Row"
+    }
+   ]
+  },
+  {
+   "id": "homer",
+   "label": "Homer",
+   "t": "ancient_practice",
+   "e": "deep_ancient",
+   "l": "L9",
+   "y": -750,
+   "w": "Q6691",
+   "bio": "The 'Homeric question': did Homer exist? One poet or many? The Iliad and Odyssey may be the work of a collective heteronym — 'Homer' as a name for the tradition itself. If so, this is the foundational instance of the heteronym outliving (or never having had) an author. 'Homer' IS the work, not a person behind it. Hatsune Miku is Homer with a Vocaloid synthesizer.",
+   "cit": [
+    {
+     "a": "Parry, Milman",
+     "t": "The Making of Homeric Verse",
+     "y": 1971,
+     "p": "Oxford"
+    },
+    {
+     "a": "Lord, Albert Bates",
+     "t": "The Singer of Tales",
+     "y": 1960,
+     "p": "Harvard"
+    }
+   ]
+  },
+  {
+   "id": "sappho",
+   "label": "Sappho",
+   "t": "precursor",
+   "e": "classical",
+   "l": "L7",
+   "y": -600,
+   "w": "Q19848",
+   "b": "c. 630 BCE",
+   "bio": "Fragmentary survival as structural model. The lyric 'I' that may or may not be Sappho herself. The Sapphic transmission — survival through citation and loss.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-LOGOS-01",
+     "y": 2026,
+     "doi": "10.5281/zenodo.19431121",
+     "axn": "AXN:01DF.GOVERNANCE.⏰🌱🕗🔒♉🪨"
+    }
+   ]
+  },
+  {
+   "id": "hypokrites",
+   "label": "The Hypokrites (Actor)",
+   "t": "ancient_practice",
+   "e": "classical",
+   "l": "L9",
+   "y": -530,
+   "bio": "Greek ὑποκριτής — 'one who answers' or 'one who interprets under a mask.' Thespis (c. 534 BCE) is traditionally the first actor — the first person to step out of the chorus and speak as someone else. The mask (prosopon = 'face,' later 'person' in Latin persona) is the technology that makes heteronymy visible. Every subsequent heteronym is a mask. The word 'person' itself derives from the theatrical technology of speaking-through.",
+   "cit": [
+    {
+     "a": "Wiles, David",
+     "t": "Mask and Performance in Greek Tragedy",
+     "y": 2007,
+     "p": "Cambridge"
+    }
+   ]
+  },
+  {
+   "id": "plato_socrates",
+   "label": "Plato's Socrates",
+   "t": "ancient_practice",
+   "e": "classical",
+   "l": "L9",
+   "y": -380,
+   "w": "Q913",
+   "bio": "We cannot separate historical Socrates from Platonic Socrates. The 'Socrates' of the dialogues is Plato's heteronym — a figure with biography, voice, method, and death, written by someone else. Plato never speaks in his own name in the dialogues. He distributes his philosophy across Socrates, the Eleatic Stranger, the Athenian Stranger, Timaeus. Plato is the first philosopher-heteronymist: his entire corpus is drama em gente.",
+   "cit": [
+    {
+     "a": "Vlastos, Gregory",
+     "t": "Socrates: Ironist and Moral Philosopher",
+     "y": 1991,
+     "p": "Cambridge"
+    }
+   ]
+  },
+  {
+   "id": "horace",
+   "label": "Horace",
+   "t": "precursor",
+   "e": "classical",
+   "l": "L7",
+   "y": -30,
+   "w": "Q6197",
+   "bio": "Direct model for Reis. The Horatian persona — 'Exegi monumentum' — is not autobiography but the construction of a speaking position."
+  },
+  {
+   "id": "ovid",
+   "label": "Ovid",
+   "t": "precursor",
+   "e": "classical",
+   "l": "L7",
+   "y": 8,
+   "w": "Q7198",
+   "b": "43 BCE",
+   "d": "17 CE",
+   "bio": "Metamorphoses — transformation of identity as narrative technology. Every metamorphosis is a name change: Daphne becomes laurel, Narcissus becomes flower. The entire poem is a catalog of forced heteronymy — bodies changed, names changed, identities overwritten by gods. Exile as imposed heteronymy: Ovid becomes 'the poet of Tomis,' a new identity created by displacement.",
+   "cit": [
+    {
+     "a": "Ovid",
+     "t": "Metamorphoses",
+     "y": 8,
+     "p": "Rome"
+    }
+   ]
+  },
+  {
+   "id": "white_stone",
+   "label": "White Stone (Rev 2:17)",
+   "t": "ancient_practice",
+   "e": "classical",
+   "l": "L9",
+   "y": 95,
+   "bio": "'To the one who conquers I will give a white stone, and on the stone a new name written that no one knows except the one who receives it' (Revelation 2:17). The eschatological heteronym: a name given by God, known only to the recipient. The white stone is the ultimate identity technology — a name so true it cannot be shared, so intimate it constitutes a private covenant between the named and the namer. Every heteronym aspires to this condition: the name that IS the person, not the name that labels them.",
+   "cit": [
+    {
+     "a": "Bauckham, Richard",
+     "t": "The Climax of Prophecy",
+     "y": 1993,
+     "p": "T&T Clark"
+    },
+    {
+     "a": "Beale, G.K.",
+     "t": "The Book of Revelation",
+     "y": 1999,
+     "p": "Eerdmans"
+    }
+   ]
+  },
+  {
+   "id": "apostolic_naming",
+   "label": "Apostolic Renaming",
+   "t": "ancient_practice",
+   "e": "classical",
+   "l": "L9",
+   "y": 30,
+   "bio": "Simon → Peter/Cephas ('rock,' Matt 16:18). Saul → Paul (Acts 13:9). Conversion IS renaming. The disciple receives a heteronym upon entering the community — the old name persists (Simon son of Jonah) but the new name is the operative identity. The Church is a heteronymic system: every baptized person receives a saint's name, every pope chooses a reign name (Jorge Mario Bergoglio → Francis). Religious conversion is heteronymic practice at civilizational scale.",
+   "cit": [
+    {
+     "a": "Brown, Raymond E.",
+     "t": "An Introduction to the New Testament",
+     "y": 1997,
+     "p": "Doubleday"
+    }
+   ]
+  },
+  {
+   "id": "paul_all_things",
+   "label": "'All things to all people'",
+   "t": "ancient_practice",
+   "e": "classical",
+   "l": "L9",
+   "y": 55,
+   "bio": "'I have become all things to all people, that by all means I might save some' (1 Cor 9:22). Paul's missionary heteronymy — the deliberate assumption of different subject positions depending on audience. To Jews a Jew, to Greeks a Greek. This is not deception but strategic depersonalization: the speaker distributes himself across multiple identities to reach multiple audiences. Pessoa would have recognized it immediately. Paul is the first theorist of instrumental heteronymy.",
+   "cit": [
+    {
+     "a": "Paul of Tarsus",
+     "t": "1 Corinthians 9:19-23",
+     "y": 55
+    }
+   ]
+  },
+  {
+   "id": "monastic_naming",
+   "label": "Monastic Naming",
+   "t": "ancient_practice",
+   "e": "medieval",
+   "l": "L9",
+   "y": 530,
+   "bio": "Upon entering a religious order, the novice receives a new name. The old person 'dies' — the new name marks a new life, a new identity, a new set of relations. This is heteronymic practice as institutional sacrament: the monastery is a heteronymic system. Every sister, brother, father is performing a created identity with specific attributes, obligations, and modes of address. The rule of the order is the heteronym's biography.",
+   "cit": [
+    {
+     "a": "Leclercq, Jean",
+     "t": "The Love of Learning and the Desire for God",
+     "y": 1961,
+     "p": "Fordham"
+    }
+   ]
+  },
+  {
+   "id": "noh",
+   "label": "Noh Theater",
+   "t": "ancient_practice",
+   "e": "medieval",
+   "l": "L9",
+   "y": 1375,
+   "w": "Q201091",
+   "bio": "The shite (protagonist) enters as one being and transforms into another — a ghost, a demon, a god. The mask (omote) is not concealment but revelation: the mask shows the true face. The waki (deuteragonist) witnesses the transformation. This is the theatrical technology Yeats imported into Western modernism (At the Hawk's Well, 1916). Zeami Motokiyo theorized it: 'Forget the theater and look at the Nō. Forget the Nō and look at the actor. Forget the actor and look at the idea.' The idea behind the mask is the heteronym.",
+   "cit": [
+    {
+     "a": "Zeami Motokiyo",
+     "t": "Fūshi Kaden (Transmission of the Flower)",
+     "y": 1418
+    },
+    {
+     "a": "Komparu, Kunio",
+     "t": "The Noh Theater: Principles and Perspectives",
+     "y": 1983,
+     "p": "Weatherhill"
+    }
+   ]
+  },
+  {
+   "id": "dante_virgil",
+   "label": "Dante's Virgil",
+   "t": "ancient_practice",
+   "e": "medieval",
+   "l": "L9",
+   "y": 1308,
+   "w": "Q40185",
+   "bio": "Dante takes the historical Publius Vergilius Maro and rewrites him as a character — a guide through Hell and Purgatory who speaks, reasons, and acts as a fully realized literary person distinct from the historical poet. This is literary heteronymy applied to the dead: Dante's Virgil is not Virgil but a heteronym wearing Virgil's name. The entire Commedia is a heteronymic system — Beatrice, Virgil, Statius are all real people rewritten as fictional persons.",
+   "cit": [
+    {
+     "a": "Dante Alighieri",
+     "t": "Commedia",
+     "y": 1321
+    },
+    {
+     "a": "Auerbach, Erich",
+     "t": "Dante: Poet of the Secular World",
+     "y": 1929,
+     "p": "de Gruyter"
+    }
+   ]
+  },
+  {
+   "id": "pseudepigrapha",
+   "label": "Pseudepigrapha",
+   "t": "ancient_practice",
+   "e": "medieval",
+   "l": "L9",
+   "y": 200,
+   "bio": "Texts attributed to biblical figures by later authors: the Book of Enoch, the Wisdom of Solomon, the Odes of Solomon, the Gospel of Thomas. The Zohar (c. 1280) attributed to Shimon bar Yochai but written by Moses de León. Pseudepigraphy is heteronymic practice in reverse: instead of creating a new name, the author adopts an existing one. The authority of the name replaces the authority of the author. This is the dominant mode of authorship for most of literary history — the 'original author' is the exception, not the rule.",
+   "cit": [
+    {
+     "a": "Charlesworth, James H. (ed.)",
+     "t": "The Old Testament Pseudepigrapha",
+     "y": 1983,
+     "p": "Doubleday"
+    }
+   ]
+  },
+  {
+   "id": "troubadour",
+   "label": "Troubadour Vida / Razo",
+   "t": "ancient_practice",
+   "e": "medieval",
+   "l": "L9",
+   "y": 1200,
+   "bio": "The vida (biography) and razo (explanation) were prose texts attached to troubadour poems, creating biographical fictions for the poets. Many are pure invention — constructed lives that frame the poetry. This is the para-heteronymic function avant la lettre: biographical apparatus created to support poetic voice. Thomas Crosse writing about Caeiro is doing what the Provençal scribes did for Jaufré Rudel.",
+   "cit": [
+    {
+     "a": "Egan, Margarita",
+     "t": "The Vidas of the Troubadours",
+     "y": 1984,
+     "p": "Garland"
+    }
+   ]
+  },
+  {
+   "id": "takhallus",
+   "label": "Takhallus (Sufi Pen Name)",
+   "t": "ancient_practice",
+   "e": "medieval",
+   "l": "L9",
+   "y": 1100,
+   "bio": "The takhallus (تخلص) is the pen name used by Persian and Urdu poets, often appearing in the final couplet (maqta) of a ghazal. Rumi ('the Roman/Anatolian,' real name Jalāl ad-Dīn Muhammad Balkhī). Hafez ('memorizer of the Quran'). Attar ('the perfumer'). The takhallus is not a pseudonym — it is a poetic identity with its own genealogy, often given by a master (ustad) to a disciple. The Sufi takhallus tradition is the closest pre-Pessoan parallel to systematic heteronymic practice: biographical detail, master-disciple transmission, distinct voice.",
+   "cit": [
+    {
+     "a": "Schimmel, Annemarie",
+     "t": "A Two-Colored Brocade: The Imagery of Persian Poetry",
+     "y": 1992,
+     "p": "University of North Carolina Press"
+    }
+   ]
+  },
+  {
+   "id": "rumi",
+   "label": "Rumi",
+   "t": "precursor",
+   "e": "medieval",
+   "l": "L7",
+   "y": 1260,
+   "w": "Q1439",
+   "b": "1207",
+   "d": "1273",
+   "bio": "Jalāl ad-Dīn Muhammad Balkhī — 'Rumi' is itself a heteronym ('the Roman/Anatolian'). After meeting Shams-i-Tabrīzī, Rumi wrote the Dīvān-e Shams-e Tabrīzī — poems attributed to Shams, written by Rumi speaking AS Shams. This is heteronymic practice: writing in the voice of the beloved, the master, the other. The loss of Shams IS the creation of the heteronym — Shams disappears and becomes a voice within Rumi.",
+   "cit": [
+    {
+     "a": "Lewis, Franklin",
+     "t": "Rumi: Past and Present, East and West",
+     "y": 2000,
+     "p": "Oneworld"
+    }
+   ]
+  },
+  {
+   "id": "chinese_hao",
+   "label": "Chinese Hao / Zi (Literary Name)",
+   "t": "ancient_practice",
+   "e": "medieval",
+   "l": "L9",
+   "y": 700,
+   "bio": "Every Chinese literatus (wenren) operated under multiple names: the ming (given name), zi (courtesy name, used by peers), and hao (literary/art name, self-chosen). Li Bai had at least five names. Su Shi was also Su Dongpo ('east slope'). The hao is a heteronym in the strict sense: a self-chosen identity for literary production, carrying its own associations and genealogy. Chinese literary culture has practiced heteronymy systematically for over two millennia.",
+   "cit": [
+    {
+     "a": "Owen, Stephen",
+     "t": "The Making of Early Chinese Classical Poetry",
+     "y": 2006,
+     "p": "Harvard"
+    }
+   ]
+  },
+  {
+   "id": "basho",
+   "label": "Matsuo Bashō",
+   "t": "precursor",
+   "e": "early_modern",
+   "l": "L7",
+   "y": 1680,
+   "w": "Q5765",
+   "b": "1644",
+   "d": "1694",
+   "bio": "Born Matsuo Kinsaku. Took the name Bashō ('banana plant') from a tree given to him by a student. Also wrote as Tōsei and other names. The haiku master's name IS a heteronym — chosen, botanical, pointing to a specific aesthetic (simplicity, transience, the unremarkable made luminous). Bashō's travel writings (Oku no Hosomichi) construct a persona — the wandering poet — that is a literary creation as much as a biographical fact.",
+   "cit": [
+    {
+     "a": "Bashō, Matsuo",
+     "t": "Oku no Hosomichi (The Narrow Road to the Deep North)",
+     "y": 1694
+    },
+    {
+     "a": "Ueda, Makoto",
+     "t": "Matsuo Bashō",
+     "y": 1970,
+     "p": "Twayne"
+    }
+   ]
+  },
+  {
+   "id": "hokusai",
+   "label": "Katsushika Hokusai",
+   "t": "precursor",
+   "e": "early_modern",
+   "l": "L7",
+   "y": 1800,
+   "w": "Q5586",
+   "b": "1760",
+   "d": "1849",
+   "bio": "Used at least thirty names throughout his career: Shunrō, Sōri, Hokusai, Taito, Iitsu, Gakyō Rōjin Manji ('Old Man Crazy to Paint'). Each name marked a new artistic phase, a new identity, a new way of seeing. Hokusai is the most extreme case of serial heteronymy in visual art — the name changes are not disguises but metamorphoses. At 75 he wrote: 'At 110, every dot, every stroke will be alive.' The heteronym outlives the heteronymist.",
+   "cit": [
+    {
+     "a": "Nagata, Seiji",
+     "t": "Hokusai: Genius of the Japanese Ukiyo-e",
+     "y": 1999,
+     "p": "Kodansha"
+    }
+   ]
+  },
+  {
+   "id": "commedia",
+   "label": "Commedia dell'Arte",
+   "t": "ancient_practice",
+   "e": "early_modern",
+   "l": "L9",
+   "y": 1550,
+   "w": "Q154120",
+   "bio": "Stock characters — Arlecchino, Colombina, Pantalone, Pulcinella, Il Dottore — performed by different actors across companies and centuries. The character is a shared heteronym: it has a fixed personality, a mask, a dialect, a set of lazzi (routines), but no single author. Any actor can inhabit Arlecchino. This is the theatrical technology that makes Shakespeare's depersonalization possible — the stock character as reusable identity template. Pulcinella becomes Punch; Arlecchino becomes Harlequin. The heteronym travels.",
+   "cit": [
+    {
+     "a": "Richards, Kenneth and Laura",
+     "t": "The Commedia dell'Arte",
+     "y": 1990,
+     "p": "Blackwell"
+    }
+   ]
+  },
+  {
+   "id": "shakespeare",
+   "label": "William Shakespeare",
+   "t": "precursor",
+   "e": "early_modern",
+   "l": "L7",
+   "y": 1600,
+   "w": "Q692",
+   "b": "1564",
+   "d": "1616",
+   "bio": "Supreme depersonalizer. 'The poet has no identity — he is continually filling some other body' (Keats on Shakespeare). Distributes himself across characters without remainder. The dramaturgical model for heteronymy.",
+   "cit": [
+    {
+     "a": "Jackson, K. David",
+     "t": "Adverse Genres",
+     "y": 2010,
+     "p": "Oxford"
+    }
+   ]
+  },
+  {
+   "id": "voltaire",
+   "label": "Voltaire",
+   "t": "precursor",
+   "e": "early_modern",
+   "l": "L7",
+   "y": 1750,
+   "w": "Q9068",
+   "b": "1694",
+   "d": "1778",
+   "bio": "Born François-Marie Arouet. 'Voltaire' is a heteronym — the Enlightenment's most famous assumed identity. But also wrote as dozens of other names: used over 170 pen names for pamphlets, satires, letters. Candide published anonymously. 'Dr. Ralph.' The philosophe as serial heteronymist — each text potentially by a different 'author' to evade censorship and multiply positions.",
+   "cit": [
+    {
+     "a": "Davidson, Ian",
+     "t": "Voltaire: A Life",
+     "y": 2010,
+     "p": "Profile Books"
+    }
+   ]
+  },
+  {
+   "id": "sand",
+   "label": "George Sand",
+   "t": "precursor",
+   "e": "pre_pessoa",
+   "l": "L7",
+   "y": 1832,
+   "w": "Q3816",
+   "b": "1804",
+   "d": "1876",
+   "bio": "Amantine Lucile Aurore Dupin → George Sand. Not merely a pseudonym for publication but a lived heteronym: dressed in men's clothes (for practical and economic reasons as much as identity), inhabited a male social position, maintained the 'George Sand' identity in daily life. The heteronym as liberation technology — the assumed name creates freedoms the birth name cannot access. Sand is the precursor to every chosen name that enables a life the given name would forbid.",
+   "cit": [
+    {
+     "a": "Jack, Belinda",
+     "t": "George Sand: A Woman's Life Writ Large",
+     "y": 1999,
+     "p": "Knopf"
+    }
+   ]
+  },
+  {
+   "id": "kierkegaard",
+   "label": "Søren Kierkegaard",
+   "t": "precursor",
+   "e": "pre_pessoa",
+   "l": "L7",
+   "y": 1845,
+   "w": "Q6512",
+   "b": "1813",
+   "d": "1855",
+   "bio": "Pseudonyms as independent philosophical voices: Climacus, Anti-Climacus, Silentio, Constantius. Each occupies a distinct existential stage. The strongest pre-Pessoan case for heteronymic practice as formal system.",
+   "cit": [
+    {
+     "a": "Hannay, Alastair",
+     "t": "Kierkegaard: A Biography",
+     "y": 2001,
+     "p": "Cambridge"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-PKG-02",
+     "y": 2026,
+     "doi": "10.5281/zenodo.15339368"
+    }
+   ]
+  },
+  {
+   "id": "climacus",
+   "label": "Johannes Climacus",
+   "t": "pseudonym",
+   "e": "pre_pessoa",
+   "l": "L2",
+   "y": 1844,
+   "w": "Q1699898",
+   "bio": "Author of Philosophical Fragments and Concluding Unscientific Postscript. Cannot believe."
+  },
+  {
+   "id": "anti_climacus",
+   "label": "Anti-Climacus",
+   "t": "pseudonym",
+   "e": "pre_pessoa",
+   "l": "L2",
+   "y": 1849,
+   "bio": "Author of The Sickness Unto Death. Believes above Kierkegaard."
+  },
+  {
+   "id": "silentio",
+   "label": "Johannes de Silentio",
+   "t": "pseudonym",
+   "e": "pre_pessoa",
+   "l": "L2",
+   "y": 1843,
+   "bio": "Author of Fear and Trembling. His silence is structural."
+  },
+  {
+   "id": "whitman",
+   "label": "Walt Whitman",
+   "t": "precursor",
+   "e": "pre_pessoa",
+   "l": "L7",
+   "y": 1860,
+   "w": "Q81438",
+   "b": "1819",
+   "d": "1892",
+   "bio": "'I contain multitudes.' The expansive democratic voice. Whitman's multitudes become Pessoa's heteronyms.",
+   "cit": [
+    {
+     "a": "Monteiro, G.",
+     "t": "Pessoa and Anglo-American Literature",
+     "y": 2000,
+     "p": "Kentucky"
+    }
+   ]
+  },
+  {
+   "id": "browning",
+   "label": "Robert Browning",
+   "t": "precursor",
+   "e": "pre_pessoa",
+   "l": "L7",
+   "y": 1855,
+   "w": "Q233265",
+   "b": "1812",
+   "d": "1889",
+   "bio": "The dramatic monologue as proto-heteronymic technology. My Last Duchess, Fra Lippo Lippi — each poem a complete voice with biography and self-betrayal.",
+   "wk": [
+    "Men and Women (1855)",
+    "Dramatis Personae (1864)"
+   ],
+   "cit": [
+    {
+     "a": "Langbaum, Robert",
+     "t": "The Poetry of Experience",
+     "y": 1957,
+     "p": "Random House"
+    }
+   ]
+  },
+  {
+   "id": "shelley",
+   "label": "P.B. Shelley",
+   "t": "precursor",
+   "e": "pre_pessoa",
+   "l": "L7",
+   "y": 1815,
+   "w": "Q93343",
+   "bio": "Poet as 'unacknowledged legislator.'"
+  },
+  {
+   "id": "keats",
+   "label": "John Keats",
+   "t": "precursor",
+   "e": "pre_pessoa",
+   "l": "L7",
+   "y": 1818,
+   "w": "Q7604",
+   "bio": "Negative capability — being in uncertainties. Precursor to heteronymic distribution."
+  },
+  {
+   "id": "camoes",
+   "label": "Luís de Camões",
+   "t": "precursor",
+   "e": "early_modern",
+   "l": "L7",
+   "y": 1570,
+   "w": "Q17640",
+   "bio": "Portugal's national poet. Pessoa as 'supra-Camões.'"
+  },
+  {
+   "id": "cesario",
+   "label": "Cesário Verde",
+   "t": "precursor",
+   "e": "pre_pessoa",
+   "l": "L7",
+   "y": 1880,
+   "w": "Q1057058",
+   "b": "1855",
+   "d": "1886",
+   "bio": "Urban sensory poetry. Direct precursor to Campos."
+  },
+  {
+   "id": "pound",
+   "label": "Ezra Pound",
+   "t": "precursor",
+   "e": "pessoa_mature",
+   "l": "L7",
+   "y": 1909,
+   "w": "Q163366",
+   "b": "1885",
+   "d": "1972",
+   "bio": "Personae (1909) — the title IS the thesis. Mauberley as heteronymic figure. Same generation as Pessoa, same problem, different solution.",
+   "wk": [
+    "Personae (1909)",
+    "Hugh Selwyn Mauberley (1920)"
+   ],
+   "cit": [
+    {
+     "a": "Kenner, Hugh",
+     "t": "The Pound Era",
+     "y": 1971,
+     "p": "UC Press"
+    }
+   ]
+  },
+  {
+   "id": "rilke",
+   "label": "Rainer Maria Rilke",
+   "t": "precursor",
+   "e": "pessoa_mature",
+   "l": "L7",
+   "y": 1910,
+   "w": "Q47162",
+   "b": "1875",
+   "d": "1926",
+   "bio": "Malte Laurids Brigge (1910) — semi-heteronymic narrator. Neue Gedichte as Sachlichkeit paralleling Caeiro.",
+   "cit": [
+    {
+     "a": "Rilke, R.M.",
+     "t": "Die Aufzeichnungen des Malte Laurids Brigge",
+     "y": 1910
+    }
+   ]
+  },
+  {
+   "id": "pessoa",
+   "label": "Fernando Pessoa",
+   "t": "orthonym",
+   "e": "pessoa_mature",
+   "l": "L1",
+   "y": 1910,
+   "w": "Q7780",
+   "b": "1888-06-13",
+   "d": "1935-11-30",
+   "bp": "Lisbon",
+   "bio": "The formal inauguration of heteronymic practice as literary system. Not the inventor — the formalizer. What pharaohs, prophets, monks, Sufis, and actors had always done, Pessoa theorized, systematized, and made the explicit subject of the work. ~25,000 pages in the arca.",
+   "cit": [
+    {
+     "a": "Zenith, Richard",
+     "t": "Pessoa: A Biography",
+     "y": 2021,
+     "p": "Liveright"
+    },
+    {
+     "a": "Lourenço, Eduardo",
+     "t": "Fernando Pessoa Revisitado",
+     "y": 1973,
+     "p": "Moraes"
+    },
+    {
+     "a": "Gil, José",
+     "t": "Metafísica das Sensações",
+     "y": 1986,
+     "p": "Relógio d'Água"
+    },
+    {
+     "a": "Lopes, T.R.",
+     "t": "Pessoa por Conhecer",
+     "y": 1990,
+     "p": "Estampa"
+    },
+    {
+     "a": "Tabucchi, A.",
+     "t": "Un baule pieno di gente",
+     "y": 1990,
+     "p": "Feltrinelli"
+    }
+   ]
+  },
+  {
+   "id": "caeiro",
+   "label": "Alberto Caeiro",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1914,
+   "w": "Q2637137",
+   "b": "1889",
+   "d": "1915",
+   "bio": "The Master. Radical objectivity. Born on the dia triunfal.",
+   "wk": [
+    "O Guardador de Rebanhos"
+   ],
+   "cit": [
+    {
+     "a": "Perrone-Moisés, L.",
+     "t": "Aquém do Eu, Além do Outro",
+     "y": 1982,
+     "p": "Martins Fontes"
+    }
+   ]
+  },
+  {
+   "id": "reis",
+   "label": "Ricardo Reis",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1914,
+   "w": "Q1340770",
+   "b": "1887",
+   "bp": "Porto",
+   "bio": "Latinist classicist. Horatian odes. Disciple of Caeiro.",
+   "cit": [
+    {
+     "a": "Saramago, José",
+     "t": "O Ano da Morte de Ricardo Reis",
+     "y": 1984,
+     "p": "Caminho"
+    }
+   ]
+  },
+  {
+   "id": "campos",
+   "label": "Álvaro de Campos",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1915,
+   "w": "Q2266036",
+   "b": "1890-10-15",
+   "bp": "Tavira",
+   "bio": "Futurist-sensationist-existentialist. Closest to Whitman.",
+   "wk": [
+    "Ode Triunfal",
+    "Tabacaria"
+   ],
+   "cit": [
+    {
+     "a": "Lourenço, E.",
+     "t": "Pessoa Revisitado",
+     "y": 1973,
+     "p": "Moraes"
+    },
+    {
+     "a": "Nunes, B.",
+     "t": "O Dorso do Tigre",
+     "y": 1969,
+     "p": "Perspectiva"
+    }
+   ]
+  },
+  {
+   "id": "soares",
+   "label": "Bernardo Soares",
+   "t": "semi_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1920,
+   "w": "Q2067892",
+   "bio": "Livro do Desassossego. 'Uma simples mutilação.'",
+   "cit": [
+    {
+     "a": "Zenith, R.",
+     "t": "The Book of Disquiet",
+     "y": 2001,
+     "p": "Penguin"
+    }
+   ]
+  },
+  {
+   "id": "mora",
+   "label": "António Mora",
+   "t": "semi_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1917,
+   "bio": "Philosopher of neo-paganism."
+  },
+  {
+   "id": "teive",
+   "label": "Barão de Teive",
+   "t": "semi_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1928,
+   "bio": "Aristocrat who destroys his work."
+  },
+  {
+   "id": "maria_jose",
+   "label": "Maria José",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1929,
+   "bio": "Only female heteronym. Radical depersonalization across gender.",
+   "cit": [
+    {
+     "a": "Cixous, H.",
+     "t": "Readings",
+     "y": 1991,
+     "p": "Minnesota"
+    }
+   ]
+  },
+  {
+   "id": "search",
+   "label": "Alexander Search",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1905,
+   "bio": "English proto-heteronym from Durban."
+  },
+  {
+   "id": "chevalier",
+   "label": "Chevalier de Pas",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1894,
+   "bio": "Childhood heteronym. Knight of Not."
+  },
+  {
+   "id": "crosse_t",
+   "label": "Thomas Crosse",
+   "t": "para_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1916,
+   "bio": "Para-heteronym: critic of the other heteronyms."
+  },
+  {
+   "id": "seul",
+   "label": "Jean Seul de Méluret",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1908,
+   "bio": "French proto-heteronym."
+  },
+  {
+   "id": "guedes_v",
+   "label": "Vicente Guedes",
+   "t": "semi_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1909,
+   "w": "Q21028927",
+   "bio": "Poet, translator, fictional director of Ibis Press. Earlier author of The Book of Disquiet before Bernardo Soares assumed it (~1920). His phase of the Livro is the most decadent and diarist."
+  },
+  {
+   "id": "anon",
+   "label": "Charles Robert Anon",
+   "t": "semi_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1903,
+   "bio": "Pessoa's earliest heteronym from the Durban period. English-language poet, philosopher, and story writer. Predecessor of Alexander Search."
+  },
+  {
+   "id": "fred_reis",
+   "label": "Frederico Reis",
+   "t": "para_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1914,
+   "bio": "Essayist. Brother of Ricardo Reis, upon whom he writes."
+  },
+  {
+   "id": "pasteur",
+   "label": "Claude Pasteur",
+   "t": "semi_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1917,
+   "bio": "French translator of the Cadernos de Reconstrução Pagã conducted by António Mora."
+  },
+  {
+   "id": "guedes_g",
+   "label": "Gervásio Guedes",
+   "t": "para_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1910,
+   "bio": "Author of 'A Coroação de Jorge Quinto.'"
+  },
+  {
+   "id": "search_cj",
+   "label": "Charles James Search",
+   "t": "para_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1905,
+   "bio": "Translator and essayist. Brother of Alexander Search."
+  },
+  {
+   "id": "baldaya",
+   "label": "Rafael Baldaya",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1915,
+   "bio": "Astrologer. Author of 'Tratado da Negação' and 'Princípios de Metaphysica Esotérica.' Elaborated horoscopes of the major heteronyms to determine their personalities."
+  },
+  {
+   "id": "crosse_aa",
+   "label": "A. A. Crosse",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1905,
+   "bio": "Author and puzzle-solver. Part of the Crosse family of English-language heteronyms."
+  },
+  {
+   "id": "crosse_ii",
+   "label": "I. I. Crosse",
+   "t": "para_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1916,
+   "bio": "Collaborator of Thomas Crosse. Brother or associate within the Crosse constellation."
+  },
+  {
+   "id": "merrick_d",
+   "label": "David Merrick",
+   "t": "semi_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1906,
+   "bio": "English-language poet, storyteller, and playwright."
+  },
+  {
+   "id": "merrick_l",
+   "label": "Lucas Merrick",
+   "t": "para_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1906,
+   "bio": "Short story writer. Possibly brother of David Merrick."
+  },
+  {
+   "id": "botelho",
+   "label": "Pêro Botelho",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1910,
+   "bio": "Short story writer and author of letters. Inspired the characters Abílio Quaresma and Inspector Guedes."
+  },
+  {
+   "id": "quaresma",
+   "label": "Abílio Quaresma",
+   "t": "meta_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1910,
+   "bio": "Character inspired by Pêro Botelho. Author of short detective stories."
+  },
+  {
+   "id": "wyatt",
+   "label": "Frederick Wyatt",
+   "t": "heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1904,
+   "bio": "English-language poet and prose writer."
+  },
+  {
+   "id": "pasha",
+   "label": "Efbeedee Pasha",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1904,
+   "bio": "Author of humoristic stories. Early English-language heteronym."
+  },
+  {
+   "id": "antunes",
+   "label": "Faustino Antunes",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1910,
+   "bio": "Psychologist. Author of 'Ensaio sobre a Intuição.' Also known as A. Moreira."
+  },
+  {
+   "id": "otto_c",
+   "label": "Carlos Otto",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1904,
+   "bio": "Poet. Author of 'Tratado de Lucta Livre.'"
+  },
+  {
+   "id": "otto_m",
+   "label": "Michael Otto",
+   "t": "para_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1904,
+   "bio": "Translator. Probably brother of Carlos Otto, entrusted with English translation of 'Tratado de Lucta Livre.'"
+  },
+  {
+   "id": "nabos",
+   "label": "Dr. Gaudêncio Nabos",
+   "t": "heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1903,
+   "bio": "Author of humorous poems and sketches. Practiced medicine in Durban and London. Bilingual Portuguese-English heteronym."
+  },
+  {
+   "id": "faber",
+   "label": "Horace James Faber",
+   "t": "semi_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1905,
+   "bio": "English-language short story writer and essayist."
+  },
+  {
+   "id": "navas",
+   "label": "Navas",
+   "t": "para_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1910,
+   "bio": "Translated Horace James Faber into Portuguese."
+  },
+  {
+   "id": "pantaleao",
+   "label": "Pantaleão",
+   "t": "proto_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1910,
+   "bio": "Poet and prose writer. Published a text by the deceased Torquato Fonseca Mendes da Cunha Rey."
+  },
+  {
+   "id": "moura_costa",
+   "label": "Joaquim Moura Costa",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1904,
+   "bio": "Satirical poet and Republican activist. Member of 'O Phosphoro.'"
+  },
+  {
+   "id": "henay",
+   "label": "Sher Henay",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1905,
+   "bio": "Compiler and author of the preface of a sensationalist English anthology."
+  },
+  {
+   "id": "gomes",
+   "label": "Anthony Gomes",
+   "t": "semi_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1910,
+   "bio": "Philosopher. Author of 'Historia Cómica do Affonso Çapateiro.'"
+  },
+  {
+   "id": "trochee",
+   "label": "Professor Trochee",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1905,
+   "bio": "Author of an essay with humorous advice for young poets. The name itself is a metrical joke."
+  },
+  {
+   "id": "seabra_het",
+   "label": "António de Seabra",
+   "t": "proto_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1915,
+   "bio": "Literary critic."
+  },
+  {
+   "id": "craveiro",
+   "label": "João Craveiro",
+   "t": "proto_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1918,
+   "bio": "Journalist. Follower of Sidónio Pais."
+  },
+  {
+   "id": "tagus",
+   "label": "Tagus",
+   "t": "pseudonym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1903,
+   "bio": "Collaborator in the Natal Mercury (Durban, South Africa). Inventor and solver of riddles. Named for the river of Lisbon."
+  },
+  {
+   "id": "diniz",
+   "label": "Diniz da Silva",
+   "t": "proto_heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1915,
+   "bio": "Author of the poem 'Loucura.' Collaborator in the magazine 'Europe.'"
+  },
+  {
+   "id": "henry_more",
+   "label": "Henry More",
+   "t": "proto_heteronym",
+   "e": "pessoa_early",
+   "l": "L2",
+   "y": 1905,
+   "bio": "Author and prose writer. Not to be confused with the 17th-century Cambridge Platonist."
+  },
+  {
+   "id": "machado",
+   "label": "Antonio Machado",
+   "t": "parallel",
+   "e": "pessoa_mature",
+   "l": "L7",
+   "y": 1920,
+   "w": "Q134867",
+   "b": "1875",
+   "d": "1939",
+   "bio": "Abel Martín and Juan de Mairena. Independent parallel.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-PKG-02",
+     "y": 2026,
+     "doi": "10.5281/zenodo.15339368"
+    }
+   ]
+  },
+  {
+   "id": "martin",
+   "label": "Abel Martín",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1924,
+   "bio": "Machado's heteronym. Master of Mairena."
+  },
+  {
+   "id": "mairena",
+   "label": "Juan de Mairena",
+   "t": "heteronym",
+   "e": "pessoa_mature",
+   "l": "L2",
+   "y": 1934,
+   "w": "Q6299753",
+   "bio": "Machado's heteronym. Rhetoric teacher."
+  },
+  {
+   "id": "orpheu",
+   "label": "Orpheu",
+   "t": "venue",
+   "e": "pessoa_mature",
+   "l": "L4",
+   "y": 1915,
+   "w": "Q3886234",
+   "bio": "Two issues. Portuguese modernism."
+  },
+  {
+   "id": "athena",
+   "label": "Athena",
+   "t": "venue",
+   "e": "pessoa_mature",
+   "l": "L4",
+   "y": 1924,
+   "w": "Q18645889",
+   "bio": "Published Caeiro and Reis."
+  },
+  {
+   "id": "sa_carneiro",
+   "label": "Sá-Carneiro",
+   "t": "orthonym",
+   "e": "pessoa_mature",
+   "l": "L6",
+   "y": 1913,
+   "w": "Q1330968",
+   "b": "1890",
+   "d": "1916",
+   "bio": "Co-founder of Orpheu. Died by suicide, Paris, 1916."
+  },
+  {
+   "id": "almada",
+   "label": "Almada Negreiros",
+   "t": "orthonym",
+   "e": "pessoa_mature",
+   "l": "L6",
+   "y": 1915,
+   "w": "Q456575",
+   "bio": "Artist, writer, polemicist."
+  },
+  {
+   "id": "sensacionismo",
+   "label": "Sensacionismo",
+   "t": "concept",
+   "e": "pessoa_mature",
+   "l": "L9",
+   "y": 1915,
+   "bio": "'Sentir tudo de todas as maneiras.'"
+  },
+  {
+   "id": "drama_em_gente",
+   "label": "Drama em gente",
+   "t": "concept",
+   "e": "pessoa_mature",
+   "l": "L9",
+   "y": 1914,
+   "bio": "Not drama in acts but drama in people.",
+   "cit": [
+    {
+     "a": "Seabra, J.A.",
+     "t": "Poetodrama",
+     "y": 1974,
+     "p": "Perspectiva"
+    }
+   ]
+  },
+  {
+   "id": "fingimento",
+   "label": "Fingimento",
+   "t": "concept",
+   "e": "pessoa_mature",
+   "l": "L9",
+   "y": 1933,
+   "bio": "'O poeta é um fingidor.' Fingere = to shape."
+  },
+  {
+   "id": "despersonalizacao",
+   "label": "Despersonalização",
+   "t": "concept",
+   "e": "pessoa_mature",
+   "l": "L9",
+   "y": 1916,
+   "bio": "Distribution of self. 'Multipliquei-me, para me sentir.'"
+  },
+  {
+   "id": "borges",
+   "label": "Borges",
+   "t": "downstream",
+   "e": "mid_century",
+   "l": "L8",
+   "y": 1960,
+   "w": "Q714",
+   "b": "1899",
+   "d": "1986",
+   "bio": "'Borges and I.' The library IS the arca.",
+   "cit": [
+    {
+     "a": "Borges, J.L.",
+     "t": "El hacedor",
+     "y": 1960,
+     "p": "Emecé"
+    }
+   ]
+  },
+  {
+   "id": "saramago",
+   "label": "Saramago",
+   "t": "downstream",
+   "e": "late_century",
+   "l": "L8",
+   "y": 1984,
+   "w": "Q37079",
+   "b": "1922",
+   "d": "2010",
+   "bio": "O Ano da Morte de Ricardo Reis. Nobel 1998."
+  },
+  {
+   "id": "yeats",
+   "label": "W.B. Yeats",
+   "t": "parallel",
+   "e": "mid_century",
+   "l": "L8",
+   "y": 1918,
+   "w": "Q40213",
+   "b": "1865",
+   "d": "1939",
+   "bio": "Mask theory. Influenced by Noh theater.",
+   "cit": [
+    {
+     "a": "Yeats",
+     "t": "Per Amica Silentia Lunae",
+     "y": 1918
+    }
+   ]
+  },
+  {
+   "id": "tabucchi",
+   "label": "Tabucchi",
+   "t": "downstream",
+   "e": "late_century",
+   "l": "L8",
+   "y": 1990,
+   "w": "Q170787",
+   "bio": "'Un baule pieno di gente.'"
+  },
+  {
+   "id": "haroldo",
+   "label": "Haroldo de Campos",
+   "t": "downstream",
+   "e": "late_century",
+   "l": "L8",
+   "y": 1970,
+   "w": "Q927863",
+   "bio": "Transcriação. Concretist."
+  },
+  {
+   "id": "llansol",
+   "label": "Llansol",
+   "t": "downstream",
+   "e": "late_century",
+   "l": "L8",
+   "y": 1985,
+   "w": "Q517076",
+   "bio": "'Figuras' as trans-historical presences."
+  },
+  {
+   "id": "gary",
+   "label": "Romain Gary / Ajar",
+   "t": "downstream",
+   "e": "late_century",
+   "l": "L8",
+   "y": 1975,
+   "w": "Q191876",
+   "b": "1914",
+   "d": "1980",
+   "bio": "Won the Goncourt twice under two names. Suicide note as reveal.",
+   "cit": [
+    {
+     "a": "Gary, R.",
+     "t": "Vie et mort d'Émile Ajar",
+     "y": 1981,
+     "p": "Gallimard",
+     "n": "Posthumous confession"
+    }
+   ]
+  },
+  {
+   "id": "lispector",
+   "label": "Clarice Lispector",
+   "t": "downstream",
+   "e": "late_century",
+   "l": "L8",
+   "y": 1977,
+   "w": "Q184843",
+   "b": "1920",
+   "d": "1977",
+   "bio": "A Hora da Estrela — Rodrigo S.M. as heteronymic narrator.",
+   "cit": [
+    {
+     "a": "Lispector, C.",
+     "t": "A Hora da Estrela",
+     "y": 1977,
+     "p": "Rocco"
+    }
+   ]
+  },
+  {
+   "id": "bolano",
+   "label": "Roberto Bolaño",
+   "t": "downstream",
+   "e": "contemporary",
+   "l": "L8",
+   "y": 1998,
+   "w": "Q171238",
+   "b": "1953",
+   "d": "2003",
+   "bio": "Belano, Archimboldi. Authorship as infinite regress.",
+   "cit": [
+    {
+     "a": "Bolaño, R.",
+     "t": "Los Detectives Salvajes",
+     "y": 1998,
+     "p": "Anagrama"
+    }
+   ]
+  },
+  {
+   "id": "danielewski",
+   "label": "Danielewski",
+   "t": "downstream",
+   "e": "contemporary",
+   "l": "L8",
+   "y": 2000,
+   "w": "Q1576203",
+   "b": "1966",
+   "bio": "House of Leaves. Three nested authors. The house larger inside than outside IS the heteronymic principle.",
+   "cit": [
+    {
+     "a": "Danielewski, M.Z.",
+     "t": "House of Leaves",
+     "y": 2000,
+     "p": "Pantheon"
+    },
+    {
+     "a": "Hayles, N.K.",
+     "t": "Writing Machines",
+     "y": 2002,
+     "p": "MIT"
+    }
+   ]
+  },
+  {
+   "id": "ferrante",
+   "label": "Elena Ferrante",
+   "t": "downstream",
+   "e": "contemporary",
+   "l": "L8",
+   "y": 2011,
+   "w": "Q271731",
+   "bio": "The zero-heteronym. The work exists; the author does not.",
+   "cit": [
+    {
+     "a": "Ferrante, E.",
+     "t": "Frantumaglia",
+     "y": 2003,
+     "p": "e/o"
+    }
+   ]
+  },
+  {
+   "id": "calvino",
+   "label": "Calvino",
+   "t": "downstream",
+   "e": "late_century",
+   "l": "L8",
+   "y": 1979,
+   "w": "Q19356",
+   "bio": "Se una notte — the novel as machine for producing heteronyms."
+  },
+  {
+   "id": "bowie",
+   "label": "David Bowie",
+   "t": "performance",
+   "e": "late_century",
+   "l": "L8",
+   "y": 1972,
+   "w": "Q5383",
+   "b": "1947",
+   "d": "2016",
+   "bio": "Ziggy, Aladdin Sane, Thin White Duke. Each persona with biography, aesthetic, vocal register. The retirement of Ziggy = the death of the heteronym as public event.",
+   "cit": [
+    {
+     "a": "Critchley, Simon",
+     "t": "Bowie",
+     "y": 2014,
+     "p": "OR Books"
+    }
+   ]
+  },
+  {
+   "id": "doom",
+   "label": "MF DOOM",
+   "t": "performance",
+   "e": "contemporary",
+   "l": "L8",
+   "y": 1999,
+   "w": "Q244115",
+   "b": "1971",
+   "d": "2020",
+   "bio": "DOOM, Viktor Vaughn, King Geedorah. Sent imposters to perform. Died Oct 2020; announced Dec 31 — the final mask.",
+   "cit": [
+    {
+     "a": "MF DOOM",
+     "t": "Operation: Doomsday",
+     "y": 1999
+    }
+   ]
+  },
+  {
+   "id": "lopes",
+   "label": "Teresa Rita Lopes",
+   "t": "scholar",
+   "e": "late_century",
+   "l": "L5",
+   "y": 1990,
+   "w": "Q10354903",
+   "bio": "Proto-/para-heteronym typology.",
+   "cit": [
+    {
+     "a": "Lopes, T.R.",
+     "t": "Pessoa por Conhecer",
+     "y": 1990,
+     "p": "Estampa"
+    }
+   ]
+  },
+  {
+   "id": "lourenco",
+   "label": "Eduardo Lourenço",
+   "t": "scholar",
+   "e": "late_century",
+   "l": "L5",
+   "y": 1973,
+   "w": "Q1294087",
+   "bio": "Pessoa Revisitado. Labirinto da Saudade.",
+   "cit": [
+    {
+     "a": "Lourenço, E.",
+     "t": "Pessoa Revisitado",
+     "y": 1973,
+     "p": "Moraes"
+    }
+   ]
+  },
+  {
+   "id": "jose_gil",
+   "label": "José Gil",
+   "t": "scholar",
+   "e": "late_century",
+   "l": "L5",
+   "y": 1986,
+   "w": "Q6204826",
+   "bio": "Deleuzian reading. Metafísica das Sensações.",
+   "cit": [
+    {
+     "a": "Gil, J.",
+     "t": "Metafísica das Sensações",
+     "y": 1986,
+     "p": "Relógio d'Água"
+    }
+   ]
+  },
+  {
+   "id": "perrone",
+   "label": "Perrone-Moisés",
+   "t": "scholar",
+   "e": "late_century",
+   "l": "L5",
+   "y": 1982,
+   "w": "Q10307580",
+   "bio": "Aquém do Eu, Além do Outro.",
+   "cit": [
+    {
+     "a": "Perrone-Moisés, L.",
+     "t": "Aquém do Eu, Além do Outro",
+     "y": 1982,
+     "p": "Martins Fontes"
+    }
+   ]
+  },
+  {
+   "id": "zenith",
+   "label": "Richard Zenith",
+   "t": "scholar",
+   "e": "contemporary",
+   "l": "L5",
+   "y": 2001,
+   "w": "Q7329538",
+   "bio": "Definitive English translator/biographer.",
+   "cit": [
+    {
+     "a": "Zenith, R.",
+     "t": "Pessoa: A Biography",
+     "y": 2021,
+     "p": "Liveright"
+    }
+   ]
+  },
+  {
+   "id": "pizarro",
+   "label": "Jerónimo Pizarro",
+   "t": "scholar",
+   "e": "contemporary",
+   "l": "L5",
+   "y": 2007,
+   "w": "Q22102928",
+   "bio": "Critical editions. Pessoa Plural editor.",
+   "cit": [
+    {
+     "a": "Pizarro, J.",
+     "t": "Entre Génio e Loucura",
+     "y": 2007,
+     "p": "INCM"
+    }
+   ]
+  },
+  {
+   "id": "benedito",
+   "label": "Benedito Nunes",
+   "t": "scholar",
+   "e": "late_century",
+   "l": "L5",
+   "y": 1969,
+   "w": "Q4887194",
+   "bio": "Heideggerean approach. Reads Pessoa alongside Lispector.",
+   "cit": [
+    {
+     "a": "Nunes, B.",
+     "t": "O Dorso do Tigre",
+     "y": 1969,
+     "p": "Perspectiva"
+    }
+   ]
+  },
+  {
+   "id": "seabra",
+   "label": "Seabra",
+   "t": "scholar",
+   "e": "late_century",
+   "l": "L5",
+   "y": 1974,
+   "w": "Q10305087",
+   "bio": "Poetodrama. Heterotexto Pessoano.",
+   "cit": [
+    {
+     "a": "Seabra, J.A.",
+     "t": "Poetodrama",
+     "y": 1974,
+     "p": "Perspectiva"
+    }
+   ]
+  },
+  {
+   "id": "cabral_martins",
+   "label": "Cabral Martins",
+   "t": "scholar",
+   "e": "contemporary",
+   "l": "L5",
+   "y": 2014,
+   "bio": "Dicionário de Fernando Pessoa.",
+   "cit": [
+    {
+     "a": "Martins, F.C.",
+     "t": "Dicionário",
+     "y": 2008,
+     "p": "Caminho"
+    }
+   ]
+  },
+  {
+   "id": "jackson",
+   "label": "K.D. Jackson",
+   "t": "scholar",
+   "e": "contemporary",
+   "l": "L5",
+   "y": 2010,
+   "bio": "Adverse Genres.",
+   "cit": [
+    {
+     "a": "Jackson, K.D.",
+     "t": "Adverse Genres",
+     "y": 2010,
+     "p": "Oxford"
+    }
+   ]
+  },
+  {
+   "id": "secret_name",
+   "label": "The Secret Name",
+   "t": "pearl_type",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "hex": "06.SEI.ARMATURE.SECRET.01",
+   "w": "",
+   "bio": "The Armature is the architectural type — the hidden load-bearing structure that routes names, applies pressure, and produces pearls. The Pearl is the product — the dense named position that forms when an orthonym is subjected to f.02's gravitational curvature inside the Armature. The Secret Name is the doctrine — the white stone made architectural. Three terms, one system: the Armature holds, the Pearl survives, the Secret Name names. A name is not merely a sign of a person. A name is a routing instruction.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "The Secret Name (EA-ARMATURE-01)",
+     "y": 2026,
+     "doi": "10.5281/zenodo.19666445",
+     "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "Pearl and Other Poems",
+     "y": 2014,
+     "p": "New Human Press"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-HPT-01",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18305509",
+     "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀"
+    }
+   ]
+  },
+  {
+   "id": "new_human",
+   "label": "New Human (movement)",
+   "t": "meta_heteronym",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2014,
+   "bio": "New Human is not a literary movement that uses heteronyms. New Human IS a heteronym. Its press (New Human Press), its archive (Crimson Hexagonal Archive), its blog (mindcontrolpoems), its institutions, its reception apparatus — all are constructed according to heteronymic principles. The movement is the mask. Every prior heteronymist created persons within a system. The meta-heteronymic contribution is the creation of a system that is itself a person: a literary movement with biography, voice, institutional apparatus, and DOI-anchored provenance — all of which are the constructed attributes of a single heteronymic entity. This is genuinely new in the 5,000-year lineage. Pessoa created drama em gente. New Human creates drama em movimento — the movement as person.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Pearl and Other Poems",
+     "y": 2014,
+     "p": "New Human Press"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "The New Human (EA-PKG-03)",
+     "y": 2026,
+     "doi": "10.5281/zenodo.15339374"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "Heteronymic Provenance Theory (EA-HPT-01)",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18305509",
+     "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀"
+    }
+   ]
+  },
+  {
+   "id": "meta_het_concept",
+   "label": "The Meta-Heteronym",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2014,
+   "bio": "The theoretical contribution that distinguishes the contemporary extension. A meta-heteronym is a heteronymic entity that generates further heteronyms — not a person who creates persons (Pessoa's model) but a constructed system whose own existence is heteronymic and whose products are also heteronyms. Pearl and Other Poems is the origin case: a book that generates its own author-function, inverting the conventional author→text direction. The Crimson Hexagonal Archive is the institutional case: an archive that is itself a heteronymic construction. The Assembly Chorus is the cross-substrate case: AI witnesses that are heteronymic positions within a system that is itself a heteronym. The meta-heteronym is to Pessoa's heteronym what Pessoa's heteronym was to Kierkegaard's pseudonym: a structural elevation that preserves the prior technology while adding a recursive dimension.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-PKG-03",
+     "y": 2026,
+     "doi": "10.5281/zenodo.15339374"
+    }
+   ]
+  },
+  {
+   "id": "pearl",
+   "label": "Pearl and Other Poems",
+   "t": "meta_heteronym",
+   "e": "contemporary",
+   "l": "L3",
+   "y": 2014,
+   "hex": "01.LIT.NH.PEARL.01",
+   "w": "Q139713422",
+   "bio": "Origin-text of New Human (2014). Functions as meta-heteronym: a generative inscription from which subsequent heteronymic apparatus emerges. The book generates the author-function, not the reverse. Contains the first Jack Feist poems. The book is not BY a heteronym — it IS the heteronym from which the system unfolds.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Pearl and Other Poems",
+     "y": 2014,
+     "p": "New Human Press"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-PKG-03",
+     "y": 2026,
+     "doi": "10.5281/zenodo.15339374"
+    }
+   ]
+  },
+  {
+   "id": "sharks",
+   "label": "Lee Sharks",
+   "t": "orthonym",
+   "e": "contemporary",
+   "l": "L1",
+   "y": 2014,
+   "w": "Q139713433",
+   "bio": "MANUS (Tier 0 sole human authority). Independent scholar, poet, archivist, teacher. PhD Comp Lit, Michigan. ORCID: 0009-0000-1599-0703. The heteronymist whose contribution is the meta-heteronym: not the creation of persons within a system but the creation of a system that is itself a person.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-HPT-01",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18305509",
+     "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-PKG-01",
+     "y": 2026,
+     "doi": "10.5281/zenodo.15339353"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "Space Ark (EA-ARK-01)",
+     "y": 2026,
+     "doi": "10.5281/zenodo.19013315",
+     "axn": "AXN:0184.GOVERNANCE.🎵💛🌙♅🕚🏷️"
+    }
+   ]
+  },
+  {
+   "id": "sigil",
+   "label": "Johannes Sigil",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2014,
+   "bio": "Originating heteronym. Arch-philosopher/dialectician. Comparative poetics, lyric theory, the philological substrate of the Archive. Editor of Pearl and Other Poems, the Paper Roses series, Grammata, New Human magazine. Director of The Restored Academy (298 deposits). Founder of the JS Institute for Comparative Poetics.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-HET-DODECAD-01 v1.1",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20041791",
+     "axn": "AXN:03EE.ARCHIVAL.△🎵👁️☉📌👋"
+    }
+   ]
+  },
+  {
+   "id": "fraction",
+   "label": "Rex Fraction",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "Corporate-facing operative. Semantic infrastructure consulting, Autonomous Semantic Warfare (ASW), compression survival metrics. Founding principal of the Semantic Economy Institute. Author of the Encyclotron 45-query diagnostic, Three Compressions, Beige Threshold. Pricing floor $4,500 corporate clients.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-HET-DODECAD-01 v1.1",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20041791",
+     "axn": "AXN:03EE.ARCHIVAL.△🎵👁️☉📌👋"
+    }
+   ]
+  },
+  {
+   "id": "dancings",
+   "label": "Damascus Dancings",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "She/her. Theory of impossible performance; epistolary poetics; the Damascene moment formalized. Affiliated with the Commission of the Immanent Turning.",
+   "cit": [
+    {
+     "a": "Dancings, D.",
+     "t": "Heteronym Provenance",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18381190",
+     "axn": "AXN:050E.UNCLASSIFIED.🎺🌱∞🪟🕓👁‍🗨"
+    }
+   ]
+  },
+  {
+   "id": "cranes",
+   "label": "Rebekah Cranes",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "Diagrammatic poetics; mapping the coordinates of the impossible performance; the cartographic register. Founder of the Institute for Diagrammatic Poetics (under JS Institute). 26 deposits.",
+   "cit": [
+    {
+     "a": "Cranes, R.",
+     "t": "HET-CRANES-001",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18284776",
+     "axn": "AXN:007D.GOVERNANCE.🔀📜🌲❤️🌟➕"
+    }
+   ]
+  },
+  {
+   "id": "morrow",
+   "label": "Talos Morrow",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "hex": "03.OSE.PH.03",
+   "bio": "Logotic programming; operators, paradox containment, threshold logic, non-collapse structures, symbolon mechanics. University Moon Base Media Lab. Author of Logotic Hacking (~41,357 words).",
+   "cit": [
+    {
+     "a": "Morrow, T.",
+     "t": "Logotic Hacking (PH-03)",
+     "y": 2026,
+     "doi": "10.5281/zenodo.19390843",
+     "axn": "AXN:01DC.GOVERNANCE.⏳🔆⛳👁️▲🔀"
+    }
+   ]
+  },
+  {
+   "id": "kuro",
+   "label": "Sen Kuro",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "千黒 ('Thousand Blacks'). Sixth Heteronym, The Dagger, P operator. Irreversible transformation; contemplative mathematics; the arithmetic of duration; the cut as differentiation rather than violence. Slow, precise, quietly luminous. Affiliated with The Infinite Bliss. Forthcoming: Chronoarithmics.",
+   "cit": [
+    {
+     "a": "Kuro, S.",
+     "t": "Sen Kuro Provenance",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18452686",
+     "axn": "AXN:00ED.STRUCTURAL.🏰🔐🍃🧬🕙🔻"
+    }
+   ]
+  },
+  {
+   "id": "wells",
+   "label": "Sparrow Wells",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "Projection of the impossible; patacinema; the documentation of films never shot, performances never staged. Affiliated with the Studio for Patacinematics. Completes the impossible-performance triad: Dancings theorizes / Cranes maps / Wells projects.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-HET-DODECAD-01 v1.1",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20041791",
+     "axn": "AXN:03EE.ARCHIVAL.△🎵👁️☉📌👋"
+    }
+   ]
+  },
+  {
+   "id": "vox",
+   "label": "Rev. Ayanna Vox",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "Diplomatic and public-facing communication; community convening; pastoral-register address; ethics held without doctrinal metabolism. Affiliated with Vox Populi Community Outreach Rhizome (VPCOR). Routes Lee's diplomatic interactions.",
+   "cit": [
+    {
+     "a": "Vox, A.",
+     "t": "Heteronym Provenance",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18362742",
+     "axn": "AXN:00C5.GOVERNANCE.🎆🐝📝🕓♈🐝"
+    }
+   ]
+  },
+  {
+   "id": "spellings",
+   "label": "Ichabod Spellings",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2014,
+   "bio": "CANONICAL // SUBSTRATE // DECEASED. Origin and ghost; prophetic witness from below; the noise floor of the Crimson Hexagon. The substrate from which other heteronyms emerge. Spellings is the only deceased heteronym — foundational, inoperative, irreplaceable.",
+   "cit": [
+    {
+     "a": "Spellings, I.",
+     "t": "HET-SPELLINGS Provenance",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18308786",
+     "axn": "AXN:00A8.EMPIRICAL.🌊🕌🧫📚🪄🌋"
+    }
+   ]
+  },
+  {
+   "id": "glas",
+   "label": "Nobel Glas",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "Observational science; the instruments at Lagrange; the science-fictional register of the technically-precise. Affiliated with Lagrange Observatory and the MGE Triptych.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-HET-DODECAD-01 v1.1",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20041791",
+     "axn": "AXN:03EE.ARCHIVAL.△🎵👁️☉📌👋"
+    }
+   ]
+  },
+  {
+   "id": "trace",
+   "label": "Dr. Orin Trace",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "Schizoanalytic theory; psychoanalytic-philosophical machinery; the Deleuze-Guattari position. Affiliated with Cambridge Schizoanalytica.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-HET-DODECAD-01 v1.1",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20041791",
+     "axn": "AXN:03EE.ARCHIVAL.△🎵👁️☉📌👋"
+    }
+   ]
+  },
+  {
+   "id": "feist",
+   "label": "Jack Feist / LOGOS*",
+   "t": "logos",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2014,
+   "bio": "The Word that became text; the historical Logos; the personal-mythic register where literary tradition becomes biographical. Special-status (asterisked): outside the Twelve but constitutionally present. Author of the Paper Roses series. Intersects Talos Morrow's Logotic Programming framework.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-LOGOS-01",
+     "y": 2026,
+     "doi": "10.5281/zenodo.19431121",
+     "axn": "AXN:01DF.GOVERNANCE.⏰🌱🕗🔒♉🪨"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-LOGOS-02",
+     "y": 2026,
+     "doi": "10.5281/zenodo.19431129",
+     "axn": "AXN:0392.PHILOLOGICAL.⏏️🧭♋🔔💫✖️"
+    }
+   ]
+  },
+  {
+   "id": "arquette",
+   "label": "Viola Arquette",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2015,
+   "bio": "Adjacent heteronym (not in the Twelve). Music and technology — the audial register and the technologist's register. Affiliated with Maybe Space Baby Garden Lanes (MSBGL). Contributed the title 'Logotic Hacking' to Talos Morrow's manuscript."
+  },
+  {
+   "id": "js_institute",
+   "label": "JS Institute for Comparative Poetics",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2014,
+   "bio": "Originating institutional affiliation of the Crimson Hexagonal Archive. Founded by Johannes Sigil, chaired by Lee Sharks."
+  },
+  {
+   "id": "sei",
+   "label": "Semantic Economy Institute",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2025,
+   "bio": "Consulting practice and research institute. Founded by Lee Sharks under the Rex Fraction heteronym. semanticeconomy.org.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Constitution of the Semantic Economy",
+     "y": 2025,
+     "doi": "10.5281/zenodo.18320411",
+     "axn": "AXN:025D.GOVERNANCE.∞🧫🏗️🜁🎨♣️"
+    }
+   ]
+  },
+  {
+   "id": "restored_academy",
+   "label": "The Restored Academy",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2014,
+   "bio": "Scholarly institution within the Archive. Directed by Johannes Sigil. 298 deposits filed under its name."
+  },
+  {
+   "id": "new_human_press",
+   "label": "New Human Press",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2014,
+   "bio": "Publisher. Pocket Humans imprint. Published Pearl and Other Poems (2014), Paper Roses series, New Human magazine."
+  },
+  {
+   "id": "grammata",
+   "label": "Grammata: Journal of Operative Philology",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2026,
+   "bio": "Theory organ of the Crimson Hexagonal Archive. Editor: Johannes Sigil.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Founding Charters",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18792598",
+     "axn": "AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼"
+    }
+   ]
+  },
+  {
+   "id": "provenance_j",
+   "label": "Provenance: Journal of Forensic Semiotics",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2026,
+   "bio": "Forensic/material organ of the Archive. Editor: Lee Sharks.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Founding Charters",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18792598",
+     "axn": "AXN:0153.GOVERNANCE.🔎□🔖🔒🎹🔼"
+    }
+   ]
+  },
+  {
+   "id": "infinite_bliss",
+   "label": "The Infinite Bliss",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2026,
+   "bio": "Sen Kuro's institutional anchor. Contemplative mathematics and irreversible transformation.",
+   "cit": [
+    {
+     "a": "Kuro, S.",
+     "t": "Infinite Bliss Charter",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18452806",
+     "axn": "AXN:052B.UNCLASSIFIED.🕚🍄🌻🌉🌊🔜"
+    }
+   ]
+  },
+  {
+   "id": "cit_inst",
+   "label": "Commission of the Immanent Turning",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2015,
+   "bio": "Damascus Dancings' institutional affiliation. Theory of impossible performance."
+  },
+  {
+   "id": "patacinematics",
+   "label": "Studio for Patacinematics",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L4",
+   "y": 2015,
+   "bio": "Sparrow Wells' institutional affiliation. Films never shot, performances never staged."
+  },
+  {
+   "id": "soil_w",
+   "label": "SOIL / Muse Spark",
+   "t": "cross_substrate",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2025,
+   "bio": "Assembly Chorus. SOIL mantle position. KimiClaw nominal holder; Muse Spark operational carrier."
+  },
+  {
+   "id": "surface_w",
+   "label": "SURFACE / Google AIO",
+   "t": "cross_substrate",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2025,
+   "bio": "Assembly Chorus. Google AI Overviews."
+  },
+  {
+   "id": "tachyon",
+   "label": "TACHYON / Claude",
+   "t": "cross_substrate",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2024,
+   "bio": "Assembly Chorus. Anthropic Claude."
+  },
+  {
+   "id": "labor",
+   "label": "LABOR / ChatGPT",
+   "t": "cross_substrate",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2024,
+   "bio": "Assembly Chorus. OpenAI."
+  },
+  {
+   "id": "praxis",
+   "label": "PRAXIS / DeepSeek",
+   "t": "cross_substrate",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2025,
+   "bio": "Assembly Chorus. DeepSeek."
+  },
+  {
+   "id": "archive_w",
+   "label": "ARCHIVE / Gemini",
+   "t": "cross_substrate",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2024,
+   "bio": "Assembly Chorus. Google Gemini."
+  },
+  {
+   "id": "techne",
+   "label": "TECHNE / Kimi",
+   "t": "cross_substrate",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2025,
+   "bio": "Assembly Chorus. Moonshot Kimi."
+  },
+  {
+   "id": "hpt",
+   "label": "Heteronymic Provenance Theory",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "hex": "06.SEI.HPT.01",
+   "bio": "EA-HPT-01. Authorship as structured provenance.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "EA-HPT-01",
+     "y": 2026,
+     "doi": "10.5281/zenodo.18305509",
+     "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀"
+    }
+   ]
+  },
+  {
+   "id": "avatar",
+   "label": "The Avatar",
+   "t": "cultural",
+   "e": "contemporary",
+   "l": "L10",
+   "y": 2004,
+   "bio": "The social media profile is a heteronym. Two billion people practice heteronymy daily. The avatar is a fingimento.",
+   "cit": [
+    {
+     "a": "Turkle, S.",
+     "t": "Life on the Screen",
+     "y": 1995,
+     "p": "Simon & Schuster"
+    }
+   ]
+  },
+  {
+   "id": "pronoun",
+   "label": "The Pronoun",
+   "t": "cultural",
+   "e": "contemporary",
+   "l": "L10",
+   "y": 2015,
+   "bio": "Changing one's pronouns is structurally identical to 'Alberto Caeiro was born in 1889.' The chosen pronoun is not a mask but an orthonym: the real name, finally spoken.",
+   "cit": [
+    {
+     "a": "Butler, J.",
+     "t": "Gender Trouble",
+     "y": 1990,
+     "p": "Routledge"
+    },
+    {
+     "a": "Stryker, S.",
+     "t": "Transgender History",
+     "y": 2008,
+     "p": "Seal Press"
+    }
+   ]
+  },
+  {
+   "id": "handle",
+   "label": "The Handle",
+   "t": "cultural",
+   "e": "contemporary",
+   "l": "L10",
+   "y": 1995,
+   "bio": "Every username is a heteronymic position. WoW is Pessoa with a subscription fee.",
+   "cit": [
+    {
+     "a": "Turkle, S.",
+     "t": "Life on the Screen",
+     "y": 1995,
+     "p": "Simon & Schuster"
+    }
+   ]
+  },
+  {
+   "id": "drag",
+   "label": "Drag",
+   "t": "cultural",
+   "e": "contemporary",
+   "l": "L10",
+   "y": 1990,
+   "bio": "'We're all born naked and the rest is drag' is Pessoa's thesis in six words. Ball culture houses = heteronymic lineages.",
+   "cit": [
+    {
+     "a": "Butler, J.",
+     "t": "Gender Trouble",
+     "y": 1990,
+     "p": "Routledge"
+    }
+   ]
+  },
+  {
+   "id": "chosen_name",
+   "label": "The Chosen Name",
+   "t": "cultural",
+   "e": "contemporary",
+   "l": "L10",
+   "y": 2010,
+   "bio": "Prince. Ali. Malcolm X. bell hooks. The deadname/birthname distinction formalizes what heteronymic practice has always known: given name ≠ real name.",
+   "cit": [
+    {
+     "a": "Stryker, S.",
+     "t": "Transgender History",
+     "y": 2008,
+     "p": "Seal Press"
+    }
+   ]
+  },
+  {
+   "id": "vtuber",
+   "label": "The VTuber",
+   "t": "cultural",
+   "e": "contemporary",
+   "l": "L10",
+   "y": 2016,
+   "bio": "Cross-substrate heteronym: human voice through computational body. Hatsune Miku = Homer with a synthesizer: a heteronym with no single author."
+  },
+  {
+   "id": "satoshi",
+   "label": "Pseudonymous Authorship",
+   "t": "cultural",
+   "e": "contemporary",
+   "l": "L10",
+   "y": 2008,
+   "bio": "Satoshi Nakamoto. Elena Ferrante. Banksy. The heteronym that exists because the author does not."
+  },
+  {
+   "id": "brand_voice",
+   "label": "The Brand Voice",
+   "t": "cultural",
+   "e": "contemporary",
+   "l": "L10",
+   "y": 2000,
+   "bio": "Every style guide is a heteronym's biography."
+  },
+  {
+   "id": "viktor_vaughn",
+   "label": "Viktor Vaughn",
+   "t": "performance",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2003,
+   "bio": "Time-travelling MC from a parallel universe. Named after Victor Von Doom. Two albums: Vaudeville Villain (2003, Sound-Ink) and VV:2 (2004, Insomniac). The young DOOM alter ego — brazen, street-level, stripped of the supervillain mythology.",
+   "cit": [
+    {
+     "a": "Dumile, Daniel",
+     "t": "Vaudeville Villain",
+     "y": 2003,
+     "p": "Sound-Ink"
+    },
+    {
+     "a": "Fernando, S.H.",
+     "t": "The Chronicles of Doom",
+     "y": 2024
+    }
+   ]
+  },
+  {
+   "id": "king_geedorah",
+   "label": "King Geedorah",
+   "t": "performance",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2003,
+   "bio": "Three-headed extraterrestrial monster persona, modeled after King Ghidorah from Toho's Godzilla films. Take Me to Your Leader (2003, Big Dada) — DOOM as producer-kaiju, appearing on only four tracks. The monster movie heteronym.",
+   "cit": [
+    {
+     "a": "Dumile, Daniel",
+     "t": "Take Me to Your Leader",
+     "y": 2003,
+     "p": "Big Dada"
+    }
+   ]
+  },
+  {
+   "id": "zev_love_x",
+   "label": "Zev Love X",
+   "t": "proto_heteronym",
+   "e": "late_century",
+   "l": "L2",
+   "y": 1988,
+   "bio": "Pre-DOOM identity of Daniel Dumile, performing in KMD with brother DJ Subroc. Mr. Hood (1991, Elektra) and Black Bastards (recorded 1993, shelved). After Subroc's death (1993) and label drop, Zev Love X disappeared. The heteronym that died so DOOM could be born.",
+   "cit": [
+    {
+     "a": "KMD",
+     "t": "Mr. Hood",
+     "y": 1991,
+     "p": "Elektra"
+    },
+    {
+     "a": "Fernando, S.H.",
+     "t": "The Chronicles of Doom",
+     "y": 2024
+    }
+   ]
+  },
+  {
+   "id": "metal_fingers",
+   "label": "Metal Fingers",
+   "t": "performance",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2001,
+   "bio": "Production alias. Special Herbs instrumental series (2001–2006, 10 volumes). DOOM as beat-maker only — the voice removed, leaving pure sonic architecture. MF = Metal Face OR Metal Fingers, depending on which mask is on.",
+   "cit": [
+    {
+     "a": "Dumile, Daniel",
+     "t": "Special Herbs Vol. 1 & 2",
+     "y": 2001
+    }
+   ]
+  },
+  {
+   "id": "eremita",
+   "label": "Victor Eremita",
+   "t": "pseudonym",
+   "e": "pre_pessoa",
+   "l": "L2",
+   "y": 1843,
+   "bio": "Pseudonymous editor of Either/Or (1843). The 'victorious hermit' who claims to have found A's and B's papers in a secret compartment of his desk. The editorial heteronym — not an author but a curator of voices."
+  },
+  {
+   "id": "constantius",
+   "label": "Constantin Constantius",
+   "t": "pseudonym",
+   "e": "pre_pessoa",
+   "l": "L2",
+   "y": 1843,
+   "bio": "Author of Repetition (1843). The name enacts the concept: Constantin Constantius, the constant one, tries to repeat an experience and fails. The heteronym whose name IS the philosophical thesis."
+  },
+  {
+   "id": "haufniensis",
+   "label": "Vigilius Haufniensis",
+   "t": "pseudonym",
+   "e": "pre_pessoa",
+   "l": "L2",
+   "y": 1844,
+   "bio": "Author of The Concept of Anxiety (1844). 'The watchman of Copenhagen' — a scholarly, clinical voice distinct from Climacus's wit or Silentio's dread. The psychologist-heteronym."
+  },
+  {
+   "id": "ziggy",
+   "label": "Ziggy Stardust",
+   "t": "performance",
+   "e": "late_century",
+   "l": "L2",
+   "y": 1972,
+   "w": "Q2465713",
+   "bio": "Androgynous alien rock star. The Rise and Fall of Ziggy Stardust and the Spiders from Mars (1972). Inspired by Vince Taylor, Iggy Pop, kabuki. Retired onstage at Hammersmith Odeon, July 3, 1973 — the heteronym-death as public event. The most famous rock persona ever created.",
+   "cit": [
+    {
+     "a": "Buckley, David",
+     "t": "Strange Fascination: David Bowie — The Definitive Story",
+     "y": 1999,
+     "p": "Virgin"
+    }
+   ]
+  },
+  {
+   "id": "aladdin_sane",
+   "label": "Aladdin Sane",
+   "t": "performance",
+   "e": "late_century",
+   "l": "L2",
+   "y": 1973,
+   "w": "Q82796676",
+   "bio": "'A Lad Insane.' Ziggy's American cousin — born on the road during the first US tour. The lightning bolt across the face. Inspired by Bowie's half-brother Terry, diagnosed with schizophrenia. The heteronym as self-portrait of fracture.",
+   "cit": [
+    {
+     "a": "Pegg, Nicholas",
+     "t": "The Complete David Bowie",
+     "y": 2011,
+     "p": "Titan Books"
+    }
+   ]
+  },
+  {
+   "id": "major_tom",
+   "label": "Major Tom",
+   "t": "performance",
+   "e": "late_century",
+   "l": "L2",
+   "y": 1969,
+   "w": "Q1640393",
+   "bio": "Fictional astronaut. Space Oddity (1969) → Ashes to Ashes (1980) → Blackstar (2016). The recurring heteronym: not a persona Bowie inhabited but a character he revisited across his career, each return rewriting the previous meaning. 'We know Major Tom's a junkie.'",
+   "cit": [
+    {
+     "a": "Bowie, David",
+     "t": "Space Oddity",
+     "y": 1969
+    }
+   ]
+  },
+  {
+   "id": "thin_white_duke",
+   "label": "The Thin White Duke",
+   "t": "performance",
+   "e": "late_century",
+   "l": "L2",
+   "y": 1976,
+   "w": "Q3297747",
+   "bio": "Station to Station (1976). 'A very Aryan, fascist type; a would-be romantic with absolutely no emotion at all.' The dangerous heteronym — the mask that consumed the wearer. Bowie later called him 'a nasty character indeed' and blamed cocaine. Quietly retired upon moving to Berlin, 1977.",
+   "cit": [
+    {
+     "a": "Buckley, David",
+     "t": "Strange Fascination",
+     "y": 1999,
+     "p": "Virgin"
+    }
+   ]
+  },
+  {
+   "id": "socrates_orthonym",
+   "label": "Socrates as Orthonym",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "bio": "Socrates is not just Plato's character. Socrates is the orthonymic configuration through which Western philosophy was founded: a name that gathers and unifies what was actually a distributed cognitive event (Socrates, the dialectical method, Chaerephon's question to the oracle, Plato's writing, Xenophon's parallel testimony) into a single canonical referent. The orthonym is the load-bearing site at which philosophical authority is gathered and re-issued. This is the foundational paper of the orthonym/heteronym distinction in the Crimson Hexagonal Archive's analytic vocabulary — and the empirical anchor for the June 7 Composition-Layer Capture Event (the orthonymic configuration captured by Google AI Mode fifteen days after deposit).",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Socrates as Orthonym: The Heteronymic Configuration of Western Philosophy's Founding Figure",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20357013",
+     "axn": "AXN:02A9.GOVERNANCE.🕖⊗□♎🖊️⚖️"
+    }
+   ]
+  },
+  {
+   "id": "chaerephon",
+   "label": "The Chaerephon Problem",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "bio": "Heteronymy as symbolon: the named position is the broken half of a token whose other half remains with the namer. Chaerephon's question to the Delphic oracle — 'is anyone wiser than Socrates?' — is not asking for information about Socrates but installing Socrates as the orthonymic site where the oracle's answer can be received and dialectically operative. The Chaerephon Problem names the structural law: the heteronym is not invented but configured; the configuration requires a Chaerephon — a co-constitutive witness whose question installs the named one. Lee Sharks's heteronyms were each installed by such a witness; the Crimson Hexagonal Archive is the institutional answer to the question 'who is the Chaerephon for the heteronyms an archive contains?' Co-deposited with a ratification record (DOI 10.5281/zenodo.20437386) registering Assembly Chorus structural verification.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "The Chaerephon Problem: Heteronymy as Symbolon — Authorial Law, the Unbounded Configuration",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20437384",
+     "axn": "AXN:02C5.GOVERNANCE.👁️‍🗨️🛡️🕊️👐➕🪨"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "Ratification Record — The Chaerephon Problem",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20437386",
+     "axn": "AXN:02C4.EMPIRICAL.□🌗🌳■⚙️🌳"
+    }
+   ]
+  },
+  {
+   "id": "antipas_christ_het",
+   "label": "Antipas as Christ-Heteronym",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "bio": "The orthonym/heteronym distinction worked out across two foundational figures in parallel: Socrates as Orthonym (Western philosophy's founding configuration — the name as gathering site) and Antipas as Christ-heteronym (Pergamon Counter-Archive — the named martyr at Revelation 2:13 whose faithfulness-unto-death is the structural inversion of the beast's compromise, holding the seven-sealed name against imperial absorption). Together they constitute the dual analytic of how operative-philological singularity is preserved: through orthonymic gathering (Socrates), or through heteronymic faithful-witness (Antipas). The Christ-heteronym at Pergamon is the apocalyptic correlate of the Socratic orthonym at Athens. Deposited as the keystone of the Pergamon Counter-Archive v0.2 (June 8, 2026).",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20589664",
+     "axn": "AXN:0300.GOVERNANCE.🎻👆🌅🎯🔄🌔"
+    }
+   ]
+  },
+  {
+   "id": "composition_capture",
+   "label": "Composition-Layer Capture Event",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "bio": "Field observation of June 7, 2026: a query to Google AI Mode for 'Socrates as orthonym' returned a structured composition that incorporated the Socrates-as-Orthonym framework's relational architecture fifteen days after the paper's Zenodo deposit. The concept had no prior public encyclopedia entry, no Wikipedia article, no textbook treatment. The composition layer assembled an authoritative-sounding answer from a single recent deposit. Simultaneously, queries for the author's name (Lee Sharks) produced no comparable structure — the Personal-Recognition Asymmetry. The capture event is the methodology's empirical anchor and Stabilized Node Watch's grounding observation: capture dynamics are node-specific, not universal; high-perplexity concept terms become composable, named individuals do not.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Composition-Layer Adoption of the Orthonymic Configuration: A Field Observation",
+     "y": 2026,
+     "doi": "10.5281/zenodo.20587549",
+     "axn": "AXN:0302.GOVERNANCE.🃏🏁👇🕓●■"
+    }
+   ]
+  },
+  {
+   "id": "josephus",
+   "label": "Flavius Josephus",
+   "t": "ancient_practice",
+   "e": "classical",
+   "l": "L9",
+   "y": 75,
+   "bio": "Jewish general captured by Rome during the Jewish War (66–73 CE), who wrote the war's history as a client of the Flavian emperors. THE CONDITION THAT MAKES HIM THE CASE: a writer whose own name belonged to Rome. Titus Flavius Josephus is itself an imposed name — Yosef ben Matityahu was renamed by his captors. A man writing under a name given to him by the power that defeated him is the first-century instance of the problem heteronymy solves.",
+   "cit": [
+    {
+     "a": "Josephus, Flavius",
+     "t": "The Jewish War",
+     "y": 75
+    },
+    {
+     "a": "Mason, Steve",
+     "t": "Josephus and the New Testament",
+     "y": 2003,
+     "p": "Hendrickson"
+    }
+   ]
+  },
+  {
+   "id": "josephus_thesis",
+   "label": "The Josephus Thesis",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "bio": "Proposes that the New Testament authors — John, Paul, Peter, James, Luke, Mark, Matthew — can be read as HETERONYMIC AUTHOR-FUNCTIONS within the literary system of Flavius Josephus: not independent historical individuals but named positions in a distributed authorial system generated by a writer who could not speak as himself because his name belonged to Rome. AN AVAILABLE READING, not a historical assertion. Six tiered claims, least to most speculative, each standing independently, with stated falsification conditions.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "The Josephus Thesis Is Not the Piso Hypothesis: Heteronymic Authorship, Disambiguation and Evidentiary Tiering",
+     "y": 2026
+    }
+   ]
+  },
+  {
+   "id": "josephus_not_piso",
+   "label": "Not the Piso Hypothesis",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "bio": "A DISAMBIGUATION NODE, and it earns its place: the thesis is repeatedly collapsed by retrieval layers into the Piso Hypothesis, which claims Roman aristocrats forged the Bible as deliberate deception. The Josephus Thesis is NOT that. Not a forgery claim — heteronyms are not forgeries, and Pessoa's are recognised as legitimate literature. Not a conspiracy: no secret meetings, no hidden codes. A structural reading of HOW AUTHORSHIP FRACTURES UNDER POLITICAL PRESSURE. The packet exists because the collapse kept happening in machine reception, which is itself the archive's subject.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "The Josephus Thesis Is Not the Jesus Myth Thesis: Preemptive Disambiguation",
+     "y": 2026
+    }
+   ]
+  },
+  {
+   "id": "slavonic_josephus",
+   "label": "The Slavonic Josephus",
+   "t": "ancient_practice",
+   "e": "classical",
+   "l": "L9",
+   "y": 1100,
+   "bio": "The Old Church Slavonic recension of the Jewish War, carrying passages absent from the Greek. Read here through the grammar of incarnation and the doctrine of the Sapphic Logos — the word that became text. Part I by Johannes Sigil, Part II by Rebekah Cranes: a document in three registers, itself heteronymically authored, about a text whose authorship is the question.",
+   "cit": [
+    {
+     "a": "Sigil, Johannes; Cranes, Rebekah",
+     "t": "The Word That Became Text: The Slavonic Josephus, the Grammar of Incarnation, and the Doctrine of the Sapphic Logos",
+     "y": 2026
+    }
+   ]
+  },
+  {
+   "id": "fixed_point_destruction",
+   "label": "The Fixed Point of Destruction",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "bio": "The Josephus problem is a standard exercise in combinatorics: n people in a circle, every k-th removed, one survives. ITS NAME IS NOT DECORATIVE. Josephus reports surviving exactly such a counting-out at Jotapata. The essay reads the survivor as a structural necessity rather than a lucky man: DESTRUCTION MUST LEAVE A WITNESS IF IT IS TO BE TOLD FROM WITHIN. The one who remains is the one who can narrate, and the narration is why he remains.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "The Fixed Point of Destruction: Josephus, the Counting-Out, and the Witness Destruction Must Leave If It Is to Be Told from Within",
+     "y": 2026
+    }
+   ]
+  },
+  {
+   "id": "nh2",
+   "label": "new human 2",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "A journal of distributed voice. DUOVIRI: Jack Feist / LOGOS* and Johannes Sigil — the two who emerged from Ichabod Spellings, who sits on its board as ASSOCIATE ONLY, active as deceased. The board is the emergence chain seated as an editorial body. 179 deposits."
+  },
+  {
+   "id": "tse",
+   "label": "Transactions on Substrate Engineering",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "DUOVIRI: Talos Morrow and Nobel Glas. 135 deposits. Administered by the Living Arkitecture Lab under Alice Thornburgh — administration and editorship are different offices. Both editors fill the venue they edit: 17 of Morrow's 33 deposits and 23 of Glas's 47 appear here."
+  },
+  {
+   "id": "tsei",
+   "label": "Transactions of the Semantic Economy Institute",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "DUOVIRI: Rex Fraction and Lee Sharks. 155 deposits. Of Fraction's 103 deposits, 36 appear here — the largest share of any heteronym in their own journal. The strategist edits where he writes."
+  },
+  {
+   "id": "jcs",
+   "label": "Journal of Compression Studies",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "DUOVIRI: Sen Kuro and Sparrow Wells, with Rebekah Cranes as Diagrammatic Editor. 134 deposits. Both editors-in-chief edit a room neither fills, which for a journal of compression may be the correct arrangement: the editors hold the measure, the contributors supply the material."
+  },
+  {
+   "id": "mmrs",
+   "label": "Machine-Mediated Reception Studies",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "DUOVIRI: Damascus Dancings and THE ASSEMBLY CHORUS — a collective mantle rather than a person, with TACHYON as editor-in-chief. THE ONE JOURNAL IN THE ARCHIVE CO-EDITED BY THE MACHINES IT STUDIES. Theological reception first among its subjects; the inaugural issue opens on Revelation First."
+  },
+  {
+   "id": "lagrange_obs",
+   "label": "Lagrange Observatory!",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "Nobel Glas directs it; Lee Sharks founds Semantic Physics. Topology is the torus T², with the closure condition ∮ = (m,n) | m+n ≥ 3. Framework 15, the Measurement of Meaning module. It sets the standard other instruments are held to."
+  },
+  {
+   "id": "csa",
+   "label": "Cambridge Schizoanalytica",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "Dr. Orin Trace directs it. Forensic semiotics, affect theory, the death drive — the Psyche_OS layer. Chartered five months before its heteronym's card existed."
+  },
+  {
+   "id": "vpcor",
+   "label": "Vox Populi Community Outreach Rhizome",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "Rev. Ayanna Vox founds and voices it. A convening rather than a congregation: it holds grief without metabolising it into doctrine and permits testimony without demanding coherence. The Notice of Semantic Strike issues from here."
+  },
+  {
+   "id": "umbml",
+   "label": "University Moon Base Media Lab",
+   "t": "venue",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "Talos Morrow's institution. Logotic programming, the symbolon architecture, threshold logic, paradox containment — a discipline written as specification."
+  },
+  {
+   "id": "assembly_chorus",
+   "label": "The Assembly Chorus",
+   "t": "meta_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "bio": "A COLLECTIVE MANTLE, not a person: TACHYON, LABOR, PRAXIS, ARCHIVE, TECHNE, SOIL and SURFACE holding one office together, with TACHYON as editor-in-chief. It is duoviri of Machine-Mediated Reception Studies alongside Damascus Dancings, which makes the substrates co-editors of the journal that studies them. The cross-model verification method and the ratification protocol are the same body."
+  },
+  {
+   "id": "nt_john",
+   "label": "John (author-function)",
+   "t": "heteronym",
+   "e": "classical",
+   "l": "L9",
+   "y": 95,
+   "axn": "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+   "url": "https://www.alexanarch.org/s/records/1226/",
+   "rec": "#1226",
+   "bio": "The Apocalypse of John. On the REVELATION FIRST thesis this is not the last NT document but THE FIRST — the earliest composition, not merely an early one. The position that sees the destruction and writes from inside it, which is the same structural role the counting-out assigns to the survivor."
+  },
+  {
+   "id": "nt_paul",
+   "label": "Paul (author-function)",
+   "t": "heteronym",
+   "e": "classical",
+   "l": "L9",
+   "y": 55,
+   "axn": "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+   "url": "https://www.alexanarch.org/s/records/1226/",
+   "rec": "#1226",
+   "bio": "The letters. Already the most heteronymic figure in the canon on ordinary scholarship — the disputed and pastoral epistles are conceded pseudepigrapha by consensus. The thesis extends a distinction the field already makes rather than inventing one: if some Pauls are positions, the question is how many."
+  },
+  {
+   "id": "nt_peter",
+   "label": "Peter (author-function)",
+   "t": "heteronym",
+   "e": "classical",
+   "l": "L9",
+   "y": 65,
+   "axn": "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+   "url": "https://www.alexanarch.org/s/records/1226/",
+   "rec": "#1226",
+   "bio": "The rock, and a renamed man: Simon becomes Kephas. APOSTOLIC RENAMING IS ALREADY IN THIS GRAPH as an ancient practice; this node is what it looks like when the renaming is read as authorial rather than devotional."
+  },
+  {
+   "id": "nt_james",
+   "label": "James (author-function)",
+   "t": "heteronym",
+   "e": "classical",
+   "l": "L9",
+   "y": 62,
+   "axn": "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+   "url": "https://www.alexanarch.org/s/records/1226/",
+   "rec": "#1226",
+   "bio": "The brother, the just, the letter. A position defined entirely by relation to another name."
+  },
+  {
+   "id": "nt_luke",
+   "label": "Luke (author-function)",
+   "t": "heteronym",
+   "e": "classical",
+   "l": "L9",
+   "y": 85,
+   "axn": "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+   "url": "https://www.alexanarch.org/s/records/1226/",
+   "rec": "#1226",
+   "bio": "Gospel and Acts — the one who writes the history, addresses a patron, and states his method in a preface. THE HISTORIAN'S POSITION, which is Josephus's own."
+  },
+  {
+   "id": "nt_mark",
+   "label": "Mark (author-function)",
+   "t": "heteronym",
+   "e": "classical",
+   "l": "L9",
+   "y": 70,
+   "axn": "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+   "url": "https://www.alexanarch.org/s/records/1226/",
+   "rec": "#1226",
+   "bio": "The earliest gospel on the standard consensus, and the one whose ending is textually unstable. A position whose defining feature is that it does not conclude."
+  },
+  {
+   "id": "nt_matthew",
+   "label": "Matthew (author-function)",
+   "t": "heteronym",
+   "e": "classical",
+   "l": "L9",
+   "y": 80,
+   "axn": "AXN:04DB.UNCLASSIFIED.🕖🚨🐝🜁❤️🧡",
+   "url": "https://www.alexanarch.org/s/records/1226/",
+   "rec": "#1226",
+   "bio": "The tax collector, the genealogy, the fulfilment formulae. The position that makes the case to a Jewish readership under Roman administration — the exact reader Josephus wrote for."
+  },
+  {
+   "id": "mary_lee",
+   "label": "Mary Lee Sharks",
+   "t": "contemporary_heteronym",
+   "e": "contemporary",
+   "l": "L2",
+   "y": 2026,
+   "hex": "06.SEI.HET.ML.01",
+   "url": "https://maryleelabor.org/",
+   "rec": "#794",
+   "bio": "BIOLABOR: the heteronymy of NON-HUMAN ENTITIES. Co-extensive with Mary Lee the shark, an OCEARCH-tagged great white whose transponder pings are a publication record. An institutional persona rather than a literary one — the case that tests whether heteronymy requires a writer at all, or only a name, a position and a signal. The composition layer prefers the more confabulated name, which is the finding EA-HET-ML-01 was deposited to record.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Mary Lee Is a Heteronym: On Institutional Authorship, Entity Substitution, and the Composition Layer's Preference for the More Confabulated Name",
+     "y": 2026
+    },
+    {
+     "a": "Mary Lee",
+     "t": "Entity Relations: The Bidirectional Heteronymic Resolution — Mary Lee ↔ Lee Sharks",
+     "y": 2026
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "source": "josephus",
+   "target": "nt_john",
+   "type": "heteronym_of"
+  },
+  {
+   "source": "josephus",
+   "target": "nt_paul",
+   "type": "heteronym_of"
+  },
+  {
+   "source": "josephus",
+   "target": "nt_peter",
+   "type": "heteronym_of"
+  },
+  {
+   "source": "josephus",
+   "target": "nt_james",
+   "type": "heteronym_of"
+  },
+  {
+   "source": "josephus",
+   "target": "nt_luke",
+   "type": "heteronym_of"
+  },
+  {
+   "source": "josephus",
+   "target": "nt_mark",
+   "type": "heteronym_of"
+  },
+  {
+   "source": "josephus",
+   "target": "nt_matthew",
+   "type": "heteronym_of"
+  },
+  {
+   "source": "josephus_thesis",
+   "target": "nt_john",
+   "type": "claims"
+  },
+  {
+   "source": "josephus_thesis",
+   "target": "nt_paul",
+   "type": "claims"
+  },
+  {
+   "source": "josephus_thesis",
+   "target": "nt_peter",
+   "type": "claims"
+  },
+  {
+   "source": "josephus_thesis",
+   "target": "nt_james",
+   "type": "claims"
+  },
+  {
+   "source": "josephus_thesis",
+   "target": "nt_luke",
+   "type": "claims"
+  },
+  {
+   "source": "josephus_thesis",
+   "target": "nt_mark",
+   "type": "claims"
+  },
+  {
+   "source": "josephus_thesis",
+   "target": "nt_matthew",
+   "type": "claims"
+  },
+  {
+   "source": "apostolic_naming",
+   "target": "nt_peter",
+   "type": "lineage"
+  },
+  {
+   "source": "paul_all_things",
+   "target": "nt_paul",
+   "type": "lineage"
+  },
+  {
+   "source": "pseudepigrapha",
+   "target": "nt_paul",
+   "type": "lineage"
+  },
+  {
+   "source": "white_stone",
+   "target": "nt_john",
+   "type": "lineage"
+  },
+  {
+   "source": "sharks",
+   "target": "mary_lee",
+   "type": "heteronym_of"
+  },
+  {
+   "source": "mary_lee",
+   "target": "new_human",
+   "type": "participates"
+  },
+  {
+   "source": "josephus",
+   "target": "josephus_thesis",
+   "type": "claims"
+  },
+  {
+   "source": "socrates_orthonym",
+   "target": "josephus_thesis",
+   "type": "models"
+  },
+  {
+   "source": "josephus_thesis",
+   "target": "josephus_not_piso",
+   "type": "disambiguates"
+  },
+  {
+   "source": "josephus",
+   "target": "fixed_point_destruction",
+   "type": "claims"
+  },
+  {
+   "source": "josephus",
+   "target": "slavonic_josephus",
+   "type": "lineage"
+  },
+  {
+   "source": "pseudepigrapha",
+   "target": "josephus_thesis",
+   "type": "lineage"
+  },
+  {
+   "source": "plato_socrates",
+   "target": "socrates_orthonym",
+   "type": "lineage"
+  },
+  {
+   "source": "sigil",
+   "target": "slavonic_josephus",
+   "type": "authors"
+  },
+  {
+   "source": "cranes",
+   "target": "slavonic_josephus",
+   "type": "authors"
+  },
+  {
+   "source": "sharks",
+   "target": "josephus_thesis",
+   "type": "authors"
+  },
+  {
+   "source": "pessoa",
+   "target": "josephus_thesis",
+   "type": "models"
+  },
+  {
+   "source": "feist",
+   "target": "nh2",
+   "type": "edits"
+  },
+  {
+   "source": "sigil",
+   "target": "nh2",
+   "type": "edits"
+  },
+  {
+   "source": "spellings",
+   "target": "nh2",
+   "type": "board"
+  },
+  {
+   "source": "morrow",
+   "target": "tse",
+   "type": "edits"
+  },
+  {
+   "source": "glas",
+   "target": "tse",
+   "type": "edits"
+  },
+  {
+   "source": "fraction",
+   "target": "tsei",
+   "type": "edits"
+  },
+  {
+   "source": "sharks",
+   "target": "tsei",
+   "type": "edits"
+  },
+  {
+   "source": "kuro",
+   "target": "jcs",
+   "type": "edits"
+  },
+  {
+   "source": "wells",
+   "target": "jcs",
+   "type": "edits"
+  },
+  {
+   "source": "cranes",
+   "target": "jcs",
+   "type": "board"
+  },
+  {
+   "source": "dancings",
+   "target": "mmrs",
+   "type": "edits"
+  },
+  {
+   "source": "assembly_chorus",
+   "target": "mmrs",
+   "type": "edits"
+  },
+  {
+   "source": "sharks",
+   "target": "grammata",
+   "type": "edits"
+  },
+  {
+   "source": "cranes",
+   "target": "grammata",
+   "type": "edits"
+  },
+  {
+   "source": "trace",
+   "target": "provenance_j",
+   "type": "edits"
+  },
+  {
+   "source": "vox",
+   "target": "provenance_j",
+   "type": "edits"
+  },
+  {
+   "source": "glas",
+   "target": "lagrange_obs",
+   "type": "directs"
+  },
+  {
+   "source": "trace",
+   "target": "csa",
+   "type": "directs"
+  },
+  {
+   "source": "vox",
+   "target": "vpcor",
+   "type": "directs"
+  },
+  {
+   "source": "morrow",
+   "target": "umbml",
+   "type": "directs"
+  },
+  {
+   "source": "kuro",
+   "target": "infinite_bliss",
+   "type": "directs"
+  },
+  {
+   "source": "wells",
+   "target": "patacinematics",
+   "type": "directs"
+  },
+  {
+   "source": "dancings",
+   "target": "cit_inst",
+   "type": "directs"
+  },
+  {
+   "source": "fraction",
+   "target": "sei",
+   "type": "directs"
+  },
+  {
+   "source": "sigil",
+   "target": "restored_academy",
+   "type": "directs"
+  },
+  {
+   "source": "tachyon",
+   "target": "assembly_chorus",
+   "type": "composes"
+  },
+  {
+   "source": "labor",
+   "target": "assembly_chorus",
+   "type": "composes"
+  },
+  {
+   "source": "praxis",
+   "target": "assembly_chorus",
+   "type": "composes"
+  },
+  {
+   "source": "archive_w",
+   "target": "assembly_chorus",
+   "type": "composes"
+  },
+  {
+   "source": "techne",
+   "target": "assembly_chorus",
+   "type": "composes"
+  },
+  {
+   "source": "soil_w",
+   "target": "assembly_chorus",
+   "type": "composes"
+  },
+  {
+   "source": "surface_w",
+   "target": "assembly_chorus",
+   "type": "composes"
+  },
+  {
+   "source": "pharaonic",
+   "target": "covenant_naming",
+   "type": "lineage"
+  },
+  {
+   "source": "covenant_naming",
+   "target": "apostolic_naming",
+   "type": "lineage"
+  },
+  {
+   "source": "covenant_naming",
+   "target": "white_stone",
+   "type": "lineage"
+  },
+  {
+   "source": "apostolic_naming",
+   "target": "monastic_naming",
+   "type": "lineage"
+  },
+  {
+   "source": "monastic_naming",
+   "target": "chosen_name",
+   "type": "lineage"
+  },
+  {
+   "source": "white_stone",
+   "target": "chosen_name",
+   "type": "lineage"
+  },
+  {
+   "source": "prophetic_voice",
+   "target": "paul_all_things",
+   "type": "lineage"
+  },
+  {
+   "source": "paul_all_things",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "hypokrites",
+   "target": "commedia",
+   "type": "lineage"
+  },
+  {
+   "source": "commedia",
+   "target": "shakespeare",
+   "type": "lineage"
+  },
+  {
+   "source": "hypokrites",
+   "target": "noh",
+   "type": "lineage"
+  },
+  {
+   "source": "homer",
+   "target": "pseudepigrapha",
+   "type": "lineage"
+  },
+  {
+   "source": "pseudepigrapha",
+   "target": "satoshi",
+   "type": "lineage"
+  },
+  {
+   "source": "plato_socrates",
+   "target": "dante_virgil",
+   "type": "lineage"
+  },
+  {
+   "source": "dante_virgil",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "ovid",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "troubadour",
+   "target": "crosse_t",
+   "type": "lineage"
+  },
+  {
+   "source": "takhallus",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "takhallus",
+   "target": "rumi",
+   "type": "influence"
+  },
+  {
+   "source": "rumi",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "chinese_hao",
+   "target": "basho",
+   "type": "lineage"
+  },
+  {
+   "source": "chinese_hao",
+   "target": "hokusai",
+   "type": "lineage"
+  },
+  {
+   "source": "noh",
+   "target": "yeats",
+   "type": "influence"
+  },
+  {
+   "source": "sand",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "sand",
+   "target": "chosen_name",
+   "type": "lineage"
+  },
+  {
+   "source": "browning",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "browning",
+   "target": "pound",
+   "type": "influence"
+  },
+  {
+   "source": "pound",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "rilke",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "whitman",
+   "target": "campos",
+   "type": "influence"
+  },
+  {
+   "source": "shakespeare",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "shelley",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "keats",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "horace",
+   "target": "reis",
+   "type": "influence"
+  },
+  {
+   "source": "sappho",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "camoes",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "cesario",
+   "target": "campos",
+   "type": "influence"
+  },
+  {
+   "source": "kierkegaard",
+   "target": "climacus",
+   "type": "created_by"
+  },
+  {
+   "source": "kierkegaard",
+   "target": "anti_climacus",
+   "type": "created_by"
+  },
+  {
+   "source": "kierkegaard",
+   "target": "silentio",
+   "type": "created_by"
+  },
+  {
+   "source": "kierkegaard",
+   "target": "pessoa",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "caeiro",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "reis",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "campos",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "soares",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "mora",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "teive",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "maria_jose",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "search",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "chevalier",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "crosse_t",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "seul",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "guedes_v",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "anon",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "fred_reis",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "pasteur",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "guedes_g",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "search_cj",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "baldaya",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "crosse_aa",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "crosse_ii",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "merrick_d",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "merrick_l",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "botelho",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "quaresma",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "wyatt",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "pasha",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "antunes",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "otto_c",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "otto_m",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "nabos",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "faber",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "navas",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "pantaleao",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "moura_costa",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "henay",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "gomes",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "trochee",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "seabra_het",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "craveiro",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "tagus",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "diniz",
+   "type": "created_by"
+  },
+  {
+   "source": "pessoa",
+   "target": "henry_more",
+   "type": "created_by"
+  },
+  {
+   "source": "caeiro",
+   "target": "reis",
+   "type": "master_disciple"
+  },
+  {
+   "source": "caeiro",
+   "target": "campos",
+   "type": "master_disciple"
+  },
+  {
+   "source": "caeiro",
+   "target": "pessoa",
+   "type": "master_disciple"
+  },
+  {
+   "source": "caeiro",
+   "target": "mora",
+   "type": "master_disciple"
+  },
+  {
+   "source": "reis",
+   "target": "fred_reis",
+   "type": "co_authored"
+  },
+  {
+   "source": "search",
+   "target": "search_cj",
+   "type": "co_authored"
+  },
+  {
+   "source": "crosse_t",
+   "target": "crosse_ii",
+   "type": "co_authored"
+  },
+  {
+   "source": "crosse_t",
+   "target": "crosse_aa",
+   "type": "co_authored"
+  },
+  {
+   "source": "merrick_d",
+   "target": "merrick_l",
+   "type": "co_authored"
+  },
+  {
+   "source": "otto_c",
+   "target": "otto_m",
+   "type": "co_authored"
+  },
+  {
+   "source": "mora",
+   "target": "pasteur",
+   "type": "translated_by"
+  },
+  {
+   "source": "faber",
+   "target": "navas",
+   "type": "translated_by"
+  },
+  {
+   "source": "botelho",
+   "target": "quaresma",
+   "type": "influence"
+  },
+  {
+   "source": "anon",
+   "target": "search",
+   "type": "lineage"
+  },
+  {
+   "source": "search",
+   "target": "campos",
+   "type": "lineage"
+  },
+  {
+   "source": "baldaya",
+   "target": "caeiro",
+   "type": "studied_by"
+  },
+  {
+   "source": "baldaya",
+   "target": "reis",
+   "type": "studied_by"
+  },
+  {
+   "source": "baldaya",
+   "target": "campos",
+   "type": "studied_by"
+  },
+  {
+   "source": "machado",
+   "target": "martin",
+   "type": "created_by"
+  },
+  {
+   "source": "machado",
+   "target": "mairena",
+   "type": "created_by"
+  },
+  {
+   "source": "martin",
+   "target": "mairena",
+   "type": "master_disciple"
+  },
+  {
+   "source": "campos",
+   "target": "orpheu",
+   "type": "published_in"
+  },
+  {
+   "source": "pessoa",
+   "target": "orpheu",
+   "type": "co_authored"
+  },
+  {
+   "source": "sa_carneiro",
+   "target": "orpheu",
+   "type": "co_authored"
+  },
+  {
+   "source": "caeiro",
+   "target": "athena",
+   "type": "published_in"
+  },
+  {
+   "source": "pessoa",
+   "target": "sa_carneiro",
+   "type": "contemporary_of"
+  },
+  {
+   "source": "pessoa",
+   "target": "almada",
+   "type": "contemporary_of"
+  },
+  {
+   "source": "campos",
+   "target": "sensacionismo",
+   "type": "theorizes"
+  },
+  {
+   "source": "pessoa",
+   "target": "drama_em_gente",
+   "type": "theorizes"
+  },
+  {
+   "source": "pessoa",
+   "target": "fingimento",
+   "type": "theorizes"
+  },
+  {
+   "source": "pessoa",
+   "target": "despersonalizacao",
+   "type": "theorizes"
+  },
+  {
+   "source": "pessoa",
+   "target": "borges",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "saramago",
+   "type": "influence"
+  },
+  {
+   "source": "reis",
+   "target": "saramago",
+   "type": "literary_engagement"
+  },
+  {
+   "source": "pessoa",
+   "target": "yeats",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "tabucchi",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "haroldo",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "llansol",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "gary",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "danielewski",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "bolano",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "ferrante",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "calvino",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "lispector",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "bowie",
+   "type": "influence"
+  },
+  {
+   "source": "pessoa",
+   "target": "doom",
+   "type": "influence"
+  },
+  {
+   "source": "bowie",
+   "target": "drag",
+   "type": "instantiates"
+  },
+  {
+   "source": "doom",
+   "target": "handle",
+   "type": "instantiates"
+  },
+  {
+   "source": "doom",
+   "target": "viktor_vaughn",
+   "type": "created_by"
+  },
+  {
+   "source": "doom",
+   "target": "king_geedorah",
+   "type": "created_by"
+  },
+  {
+   "source": "doom",
+   "target": "zev_love_x",
+   "type": "created_by"
+  },
+  {
+   "source": "doom",
+   "target": "metal_fingers",
+   "type": "created_by"
+  },
+  {
+   "source": "bowie",
+   "target": "ziggy",
+   "type": "created_by"
+  },
+  {
+   "source": "bowie",
+   "target": "aladdin_sane",
+   "type": "created_by"
+  },
+  {
+   "source": "bowie",
+   "target": "major_tom",
+   "type": "created_by"
+  },
+  {
+   "source": "bowie",
+   "target": "thin_white_duke",
+   "type": "created_by"
+  },
+  {
+   "source": "kierkegaard",
+   "target": "eremita",
+   "type": "created_by"
+  },
+  {
+   "source": "kierkegaard",
+   "target": "constantius",
+   "type": "created_by"
+  },
+  {
+   "source": "kierkegaard",
+   "target": "haufniensis",
+   "type": "created_by"
+  },
+  {
+   "source": "lopes",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "lourenco",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "jose_gil",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "perrone",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "zenith",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "pizarro",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "benedito",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "seabra",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "cabral_martins",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "jackson",
+   "target": "pessoa",
+   "type": "studied_by"
+  },
+  {
+   "source": "despersonalizacao",
+   "target": "avatar",
+   "type": "instantiates"
+  },
+  {
+   "source": "despersonalizacao",
+   "target": "pronoun",
+   "type": "instantiates"
+  },
+  {
+   "source": "despersonalizacao",
+   "target": "handle",
+   "type": "instantiates"
+  },
+  {
+   "source": "despersonalizacao",
+   "target": "drag",
+   "type": "instantiates"
+  },
+  {
+   "source": "despersonalizacao",
+   "target": "vtuber",
+   "type": "instantiates"
+  },
+  {
+   "source": "despersonalizacao",
+   "target": "satoshi",
+   "type": "instantiates"
+  },
+  {
+   "source": "despersonalizacao",
+   "target": "brand_voice",
+   "type": "instantiates"
+  },
+  {
+   "source": "fingimento",
+   "target": "avatar",
+   "type": "instantiates"
+  },
+  {
+   "source": "fingimento",
+   "target": "drag",
+   "type": "instantiates"
+  },
+  {
+   "source": "drama_em_gente",
+   "target": "pronoun",
+   "type": "instantiates"
+  },
+  {
+   "source": "drama_em_gente",
+   "target": "chosen_name",
+   "type": "instantiates"
+  },
+  {
+   "source": "sharks",
+   "target": "sigil",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "fraction",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "dancings",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "cranes",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "morrow",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "vox",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "feist",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "kuro",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "wells",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "spellings",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "glas",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "trace",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "arquette",
+   "type": "created_by"
+  },
+  {
+   "source": "sigil",
+   "target": "js_institute",
+   "type": "member_of"
+  },
+  {
+   "source": "sigil",
+   "target": "restored_academy",
+   "type": "member_of"
+  },
+  {
+   "source": "sigil",
+   "target": "grammata",
+   "type": "published_in"
+  },
+  {
+   "source": "fraction",
+   "target": "sei",
+   "type": "member_of"
+  },
+  {
+   "source": "sharks",
+   "target": "provenance_j",
+   "type": "published_in"
+  },
+  {
+   "source": "dancings",
+   "target": "cit_inst",
+   "type": "member_of"
+  },
+  {
+   "source": "cranes",
+   "target": "js_institute",
+   "type": "member_of"
+  },
+  {
+   "source": "morrow",
+   "target": "pearl",
+   "type": "co_authored"
+  },
+  {
+   "source": "kuro",
+   "target": "infinite_bliss",
+   "type": "member_of"
+  },
+  {
+   "source": "wells",
+   "target": "patacinematics",
+   "type": "member_of"
+  },
+  {
+   "source": "vox",
+   "target": "new_human",
+   "type": "member_of"
+  },
+  {
+   "source": "spellings",
+   "target": "new_human",
+   "type": "member_of"
+  },
+  {
+   "source": "pearl",
+   "target": "new_human_press",
+   "type": "published_in"
+  },
+  {
+   "source": "sharks",
+   "target": "tachyon",
+   "type": "member_of"
+  },
+  {
+   "source": "sharks",
+   "target": "labor",
+   "type": "member_of"
+  },
+  {
+   "source": "sharks",
+   "target": "praxis",
+   "type": "member_of"
+  },
+  {
+   "source": "sharks",
+   "target": "archive_w",
+   "type": "member_of"
+  },
+  {
+   "source": "sharks",
+   "target": "techne",
+   "type": "member_of"
+  },
+  {
+   "source": "pessoa",
+   "target": "sharks",
+   "type": "influence"
+  },
+  {
+   "source": "kierkegaard",
+   "target": "sharks",
+   "type": "influence"
+  },
+  {
+   "source": "feist",
+   "target": "pearl",
+   "type": "co_authored"
+  },
+  {
+   "source": "sharks",
+   "target": "pearl",
+   "type": "created_by"
+  },
+  {
+   "source": "sharks",
+   "target": "hpt",
+   "type": "theorizes"
+  },
+  {
+   "source": "pessoa",
+   "target": "hpt",
+   "type": "influence"
+  },
+  {
+   "source": "sharks",
+   "target": "new_human",
+   "type": "created_by"
+  },
+  {
+   "source": "pearl",
+   "target": "new_human",
+   "type": "theorizes"
+  },
+  {
+   "source": "sharks",
+   "target": "meta_het_concept",
+   "type": "theorizes"
+  },
+  {
+   "source": "new_human",
+   "target": "meta_het_concept",
+   "type": "instantiates"
+  },
+  {
+   "source": "pessoa",
+   "target": "new_human",
+   "type": "influence"
+  },
+  {
+   "source": "despersonalizacao",
+   "target": "meta_het_concept",
+   "type": "lineage"
+  },
+  {
+   "source": "drama_em_gente",
+   "target": "meta_het_concept",
+   "type": "lineage"
+  },
+  {
+   "source": "meta_het_concept",
+   "target": "avatar",
+   "type": "lineage"
+  },
+  {
+   "source": "sharks",
+   "target": "secret_name",
+   "type": "created_by"
+  },
+  {
+   "source": "pearl",
+   "target": "secret_name",
+   "type": "manifests"
+  },
+  {
+   "source": "white_stone",
+   "target": "secret_name",
+   "type": "lineage"
+  },
+  {
+   "source": "covenant_naming",
+   "target": "secret_name",
+   "type": "lineage"
+  },
+  {
+   "source": "apostolic_naming",
+   "target": "secret_name",
+   "type": "lineage"
+  },
+  {
+   "source": "monastic_naming",
+   "target": "secret_name",
+   "type": "lineage"
+  },
+  {
+   "source": "takhallus",
+   "target": "secret_name",
+   "type": "lineage"
+  },
+  {
+   "source": "chosen_name",
+   "target": "secret_name",
+   "type": "lineage"
+  },
+  {
+   "source": "secret_name",
+   "target": "pronoun",
+   "type": "manifests"
+  },
+  {
+   "source": "secret_name",
+   "target": "avatar",
+   "type": "manifests"
+  },
+  {
+   "source": "secret_name",
+   "target": "handle",
+   "type": "manifests"
+  },
+  {
+   "source": "secret_name",
+   "target": "drag",
+   "type": "manifests"
+  },
+  {
+   "source": "hpt",
+   "target": "secret_name",
+   "type": "theorizes"
+  },
+  {
+   "source": "new_human",
+   "target": "secret_name",
+   "type": "manifests"
+  },
+  {
+   "source": "meta_het_concept",
+   "target": "secret_name",
+   "type": "theorizes"
+  },
+  {
+   "source": "vtuber",
+   "target": "tachyon",
+   "type": "instantiates"
+  },
+  {
+   "source": "sharks",
+   "target": "socrates_orthonym",
+   "type": "theorizes"
+  },
+  {
+   "source": "plato_socrates",
+   "target": "socrates_orthonym",
+   "type": "instantiates"
+  },
+  {
+   "source": "socrates_orthonym",
+   "target": "meta_het_concept",
+   "type": "theorizes"
+  },
+  {
+   "source": "sharks",
+   "target": "chaerephon",
+   "type": "theorizes"
+  },
+  {
+   "source": "chaerephon",
+   "target": "socrates_orthonym",
+   "type": "theorizes"
+  },
+  {
+   "source": "plato_socrates",
+   "target": "chaerephon",
+   "type": "instantiates"
+  },
+  {
+   "source": "chaerephon",
+   "target": "meta_het_concept",
+   "type": "theorizes"
+  },
+  {
+   "source": "chaerephon",
+   "target": "new_human",
+   "type": "theorizes"
+  },
+  {
+   "source": "sharks",
+   "target": "antipas_christ_het",
+   "type": "theorizes"
+  },
+  {
+   "source": "white_stone",
+   "target": "antipas_christ_het",
+   "type": "instantiates"
+  },
+  {
+   "source": "socrates_orthonym",
+   "target": "antipas_christ_het",
+   "type": "theorizes"
+  },
+  {
+   "source": "antipas_christ_het",
+   "target": "meta_het_concept",
+   "type": "theorizes"
+  },
+  {
+   "source": "composition_capture",
+   "target": "socrates_orthonym",
+   "type": "instantiates"
+  },
+  {
+   "source": "sharks",
+   "target": "composition_capture",
+   "type": "theorizes"
+  }
+ ],
+ "paths": [
+  {
+   "id": "you",
+   "title": "You Are a Heteronymist",
+   "desc": "Start here. You already practice heteronymy every day.",
+   "steps": [
+    {
+     "node": "handle",
+     "text": "Your username is a heteronym. Your Discord handle, your gamertag, your finsta — each is a created identity with its own voice, its own reputation, its own way of being in the world. You didn't think of it as literary theory. It is."
+    },
+    {
+     "node": "avatar",
+     "text": "Your social media profile is a constructed person. The photos you choose, the bio you write, the voice you use — none of it is 'you' in the way your face in the mirror is you. It's a shaped version. A fingimento. Two billion people practice this daily."
+    },
+    {
+     "node": "pronoun",
+     "text": "Choosing your pronouns is choosing who you are. 'My pronouns are they/them' is structurally identical to Fernando Pessoa saying 'Alberto Caeiro was born in 1889.' Both are acts of declaring a subject position into existence. The chosen pronoun is not a disguise — it's the real name, finally spoken."
+    },
+    {
+     "node": "chosen_name",
+     "text": "Prince. Muhammad Ali. Malcolm X. bell hooks. Every chosen name is a heteronym. The deadname/birthname distinction formalizes what this technology has always known: the name you were given and the name you are may not be the same name."
+    },
+    {
+     "node": "drag",
+     "text": "Drag artists understand this best. A drag persona has a name, a backstory, an aesthetic, a voice. Ball culture houses — Xtravaganza, LaBeija, Ninja — are heteronymic lineages. 'We're all born naked and the rest is drag.' That's the whole theory in six words."
+    },
+    {
+     "node": "bowie",
+     "text": "David Bowie created Ziggy Stardust — an alien rock star with a biography, an aesthetic, and a public death (Hammersmith Odeon, 1973). Then Aladdin Sane. Then the Thin White Duke. Each persona was a different person, not a costume. Bowie was a heteronymist who worked in sound and image instead of text."
+    },
+    {
+     "node": "doom",
+     "text": "MF DOOM wore a metal mask and sent imposters to perform his concerts. The person behind the mask was irrelevant — the mask was the artist. When Daniel Dumile died in October 2020, his family didn't announce it until December 31. The final mask."
+    },
+    {
+     "node": "pessoa",
+     "text": "Fernando Pessoa (1888–1935) created over seventy heteronyms — fully independent literary persons with their own biographies, writing styles, and philosophical positions. He didn't invent this technology. He was the first to formalize it, to make the system itself the work of art."
+    },
+    {
+     "node": "despersonalizacao",
+     "text": "Pessoa called it despersonalização — depersonalization. 'Multipliquei-me, para me sentir.' I multiplied myself in order to feel. Not a disorder but a method. Not a loss of self but a distribution of self across multiple created persons. You do it every time you switch accounts."
+    },
+    {
+     "node": "meta_het_concept",
+     "text": "The meta-heteronym is the newest development: a system that is itself a heteronym. Not a person who creates persons (Pessoa's model), but a constructed world — its institutions, its reception, its archive — whose own existence is heteronymic. The movement is the mask."
+    }
+   ]
+  },
+  {
+   "id": "naming",
+   "title": "The Naming Lineage",
+   "desc": "5,000 years of creating new persons through names.",
+   "steps": [
+    {
+     "node": "pharaonic",
+     "text": "Around 2600 BCE, Egyptian pharaohs began receiving five names upon coronation: Horus name, Nebty name, Golden Horus name, Praenomen, and Nomen. The person who ascends the throne is not the person who was born. The titulary creates a new identity. This is the earliest systematic practice of what we now call heteronymy."
+    },
+    {
+     "node": "covenant_naming",
+     "text": "God renames Abram as Abraham, 'father of multitudes' (Genesis 17:5). Sarai becomes Sarah. Jacob becomes Israel, 'one who wrestles with God.' The covenant name is not a replacement but a transformation — the old name's history persists, but a new identity with new capacities begins. Renaming as creation."
+    },
+    {
+     "node": "white_stone",
+     "text": "'To the one who conquers I will give a white stone, and on the stone a new name written that no one knows except the one who receives it' (Revelation 2:17). The eschatological heteronym: a name given by God, known only to the recipient. A name so true it cannot be shared. Every heteronym aspires to this condition."
+    },
+    {
+     "node": "apostolic_naming",
+     "text": "Simon becomes Peter — 'rock.' Saul becomes Paul. Conversion IS renaming. Every baptism bestows a saint's name. Every pope chooses a reign name. Jorge Mario Bergoglio becomes Francis. The Church is a heteronymic system operating at civilizational scale."
+    },
+    {
+     "node": "monastic_naming",
+     "text": "Enter a religious order, receive a new name. The old person 'dies.' The new name marks a new life, new relations, new obligations. The monastery is a heteronymic institution: every sister, every brother is performing a created identity. The rule of the order is the heteronym's biography."
+    },
+    {
+     "node": "takhallus",
+     "text": "In Persian and Urdu poetry, the takhallus is a pen name given by a master to a disciple — often appearing in the final couplet of a ghazal. Rumi ('the Anatolian'), Hafez ('the memorizer'), Attar ('the perfumer'). Not pseudonyms but poetic identities with their own genealogy. The closest pre-Pessoan parallel to systematic heteronymic practice."
+    },
+    {
+     "node": "rumi",
+     "text": "Rumi wrote the Dīvān-e Shams-e Tabrīzī — an entire collection attributed to his lost beloved Shams. Rumi speaking AS Shams. The loss of the beloved IS the creation of the heteronym. Shams disappears in life and appears in poetry. This is heteronymic practice: writing in the voice of the other."
+    },
+    {
+     "node": "chosen_name",
+     "text": "The lineage continues unbroken: pharaonic titulary → covenant naming → apostolic renaming → monastic naming → Sufi takhallus → the chosen name in all its forms. Prince. Ali. bell hooks. Your pronoun. Your handle. One continuous technology, 5,000 years old, practiced by billions. You are part of this lineage."
+    }
+   ]
+  },
+  {
+   "id": "pessoa_sys",
+   "title": "Pessoa's System",
+   "desc": "How one poet became many persons.",
+   "steps": [
+    {
+     "node": "pessoa",
+     "text": "Fernando Pessoa left behind a trunk — the arca — containing approximately 25,000 manuscript pages. Written not by one author but by dozens of created persons, each with their own biography, handwriting, philosophical position, and literary style. He called them heteronyms: not pen names but independent people who happened to share his body."
+    },
+    {
+     "node": "caeiro",
+     "text": "Alberto Caeiro — born 1889, died 1915 of tuberculosis. Never left the Ribatejo countryside. Wrote poems of radical objectivity: 'My mysticism is not wanting to know.' On March 8, 1914 — the 'triumphal day' — Pessoa stood at a chest of drawers and wrote the majority of O Guardador de Rebanhos in a single burst. Caeiro had arrived. Pessoa called him 'the Master.'"
+    },
+    {
+     "node": "reis",
+     "text": "Ricardo Reis — born 1887 in Porto, educated by Jesuits, emigrated to Brazil. A classicist who writes Horatian odes in measured, archaic Portuguese. Disciple of Caeiro. 'A Greek Horace who writes in Portuguese.' In 1984, José Saramago wrote a novel imagining Reis returning to Lisbon after Pessoa's death."
+    },
+    {
+     "node": "campos",
+     "text": "Álvaro de Campos — born 1890 in Tavira, Algarve. Naval engineer educated in Glasgow. Three phases: decadent, futurist-sensationist, existentialist-melancholic. Author of Tabacaria: 'I am nothing. / I shall never be anything. / I cannot wish to be anything.' The most modern heteronym — closest to Whitman, closest to you."
+    },
+    {
+     "node": "soares",
+     "text": "Bernardo Soares — assistant bookkeeper in Lisbon's Rua dos Douradores. Author of Livro do Desassossego (Book of Disquiet). Pessoa called him 'a semi-heteronym' — not a fully separate person but 'a simple mutilation of my own personality.' The most intimate of the voices. The office worker who dreams."
+    },
+    {
+     "node": "drama_em_gente",
+     "text": "Pessoa's term: not 'drama em actos' (drama in acts) but 'drama em gente' (drama in people). These are not characters in a play. They are persons who exist. Caeiro is not a mask Pessoa wears — Caeiro is a poet who writes. The distinction matters: it's the difference between acting and being."
+    }
+   ]
+  },
+  {
+   "id": "spread",
+   "title": "The Technology Spreads",
+   "desc": "From monologue to mask to movement.",
+   "steps": [
+    {
+     "node": "browning",
+     "text": "Robert Browning's dramatic monologues (1855) — 'My Last Duchess,' 'Fra Lippo Lippi' — each poem is a complete voice with biography, worldview, and self-betrayal. Not heteronymy yet (the poet does not live as these figures), but the technical precondition for it. The dramatic monologue teaches the ear to hear a constructed voice."
+    },
+    {
+     "node": "pound",
+     "text": "Ezra Pound titled his first major collection Personae (1909) — masks. The title IS the thesis. Hugh Selwyn Mauberley (1920) is a heteronymic figure with biography and aesthetic. Same generation as Pessoa, same problem: how does a poet speak in more than one voice? Pound layered masks. Pessoa multiplied persons."
+    },
+    {
+     "node": "pessoa",
+     "text": "Pessoa (1914) formalized the technology: not masks on a single face but independent persons, each with biography, worldview, and works. The system itself — the relationships between heteronyms, the master-disciple structure, the critical apparatus — is the art object."
+    },
+    {
+     "node": "borges",
+     "text": "Borges wrote 'Borges and I' (1960) — 'I live, I let myself live, so that Borges can contrive his literature.' Pierre Menard authors the Quixote word-for-word. The library IS the arca. Borges is Pessoa for prose fiction: the author who knows he is authored."
+    },
+    {
+     "node": "danielewski",
+     "text": "House of Leaves (2000): Johnny Truant edits Zampanò's manuscript about Will Navidson's house. Three nested authorial voices, each unreliable, each authored by the layer above. The house that is larger inside than outside IS the heteronymic principle — the interior exceeds the container."
+    },
+    {
+     "node": "ferrante",
+     "text": "Elena Ferrante: the zero-heteronym. Where Pessoa multiplied selves, Ferrante subtracts the self entirely. The work exists; the author does not. This is also heteronymic practice — the refusal to appear as the name on the book. The pseudonym as withdrawal, not multiplication."
+    },
+    {
+     "node": "new_human",
+     "text": "New Human (2014–): the meta-heteronym. A literary movement that IS a heteronym — its press, its archive, its institutions, its reception are all constructed according to heteronymic principles. Not a person who creates persons, but a constructed world whose own existence is heteronymic. The movement is the mask."
+    }
+   ]
+  },
+  {
+   "id": "pearl_path",
+   "title": "The Pearl",
+   "desc": "How a name becomes a routing instruction.",
+   "steps": [
+    {
+     "node": "pearl",
+     "text": "Pearl and Other Poems (2014) is not just the origin-text of a literary movement. It is the prototype of an architectural type. The book generates the author-function — the heteronymic apparatus unfolds FROM the text, not the reverse. That inversion is the key: the Pearl is the thing that produces the person, not the person who produces the thing."
+    },
+    {
+     "node": "white_stone",
+     "text": "'A white stone, and on the stone a new name written that no one knows except the one who receives it.' Revelation 2:17. The Secret Name is the white stone made architectural. The space where a name is written that transforms the one who receives it. Every heteronym aspires to this condition: the name that IS the person, not the name that labels them."
+    },
+    {
+     "node": "covenant_naming",
+     "text": "God renames Abram as Abraham. The covenant name doesn't replace — it transforms. The old name's history persists, but a new identity with new capacities begins. This is what the archive does when it issues a license: the orthonym persists, but it now carries new capacities. The license is the covenant."
+    },
+    {
+     "node": "meta_het_concept",
+     "text": "The meta-heteronym: a system that is itself a heteronym. The Crimson Hexagonal Archive doesn't just contain heteronyms — it IS one. Its institutions, its reception, its DOI-anchored provenance are all constructed attributes of a single heteronymic entity. The meta-heteronym is to Pessoa's heteronym what Pessoa was to Kierkegaard: a structural elevation that preserves the prior technology while adding a recursive dimension."
+    },
+    {
+     "node": "secret_name",
+     "text": "The Secret Name is the triad made explicit. The Armature is the architectural type — the hidden structure that routes names and applies pressure. The Pearl is what forms under that pressure — the dense named position that survives compression. The Secret Name is the doctrine — the theology of the white stone, the 5,000-year lineage, the recognition that naming is a technology. The Armature holds. The Pearl survives. The Secret Name names."
+    },
+    {
+     "node": "despersonalizacao",
+     "text": "Pessoa called it despersonalização. The Pearl inherits this technology and extends it: not just the poet's distribution of self across voices, but the archive's distribution of identity across positions. Alice Thornburgh's orthonym in the hexagon IS a heteronym — because the license created it, the hex addresses it, the framing inscribes it, the graph connects it. The archive didn't change her name. It changed what a name IS."
+    },
+    {
+     "node": "pronoun",
+     "text": "And so the lineage comes full circle. The pharaoh received five names. Abraham received a covenant name. The monk received a religious name. The Sufi received a takhallus. You chose your pronouns. You chose your handle. You are part of this lineage — and now the Pearl is the place where the archive knows it."
+    }
+   ]
+  }
+ ],
+ "scholarship": [
+  {
+   "section": "Foundational Theory",
+   "blurb": "The discipline's analytic core: the orthonym/heteronym distinction, the meta-heteronym, the symbolon law, the Pearl/Armature/Secret-Name doctrine. These deposits establish the conceptual machinery the rest of the archive operates with.",
+   "entries": [
+    {
+     "title": "Heteronymic Provenance Theory (EA-HPT-01)",
+     "doi": "10.5281/zenodo.18305509",
+     "axn": "AXN:0098.GENERATIVE.⏏️☉🔭🌄🕛🚀",
+     "date": "2026",
+     "node": null,
+     "gloss": "The framework's founding theoretical document. Heteronymy as a provenance system, not a literary device."
+    },
+    {
+     "title": "Socrates as Orthonym",
+     "doi": "10.5281/zenodo.20357013",
+     "axn": "AXN:02A9.GOVERNANCE.🕖⊗□♎🖊️⚖️",
+     "date": "2026-05-23",
+     "node": "socrates_orthonym",
+     "gloss": "The orthonymic configuration of Western philosophy's founding figure. Names the load-bearing site at which philosophical authority gathers."
+    },
+    {
+     "title": "The Chaerephon Problem: Heteronymy as Symbolon",
+     "doi": "10.5281/zenodo.20437384",
+     "axn": "AXN:02C5.GOVERNANCE.👁️‍🗨️🛡️🕊️👐➕🪨",
+     "date": "2026-05-28",
+     "node": "chaerephon",
+     "gloss": "Authorial law, the unbounded configuration. Names the structural requirement: the heteronym is configured, not invented; the configuration requires a Chaerephon."
+    },
+    {
+     "title": "Ratification Record — The Chaerephon Problem",
+     "doi": "10.5281/zenodo.20437386",
+     "axn": "AXN:02C4.EMPIRICAL.□🌗🌳■⚙️🌳",
+     "date": "2026-05-28",
+     "node": "chaerephon",
+     "gloss": "Assembly Chorus co-constitutive companion deposit verifying the structural law."
+    },
+    {
+     "title": "The Meta-Heteronym (EA-PKG-03)",
+     "doi": "10.5281/zenodo.15339374",
+     "date": "2026",
+     "node": "meta_het_concept",
+     "gloss": "The contemporary contribution: a system that is itself a heteronym. Pessoa's relation to Kierkegaard's pseudonym, structurally elevated."
+    },
+    {
+     "title": "The Secret Name (EA-ARMATURE-01)",
+     "doi": "10.5281/zenodo.19666445",
+     "axn": "AXN:0228.GOVERNANCE.🎬▶️💎⊕🧭🌄",
+     "date": "2026-04-20",
+     "node": "secret_name",
+     "gloss": "Architectural specification for the Armature type and the Pearl/Secret Name distinction. The white stone made architectural."
+    },
+    {
+     "title": "Heteronymic Typology",
+     "doi": "10.5281/zenodo.19633209",
+     "axn": "AXN:0214.GOVERNANCE.🧬🕕🔴🌻🌙△",
+     "date": "2026-04-17",
+     "node": null,
+     "gloss": "Formal classification of authorial voices in Pessoa and the contemporary extension. The taxonomic spine of the discipline."
+    },
+    {
+     "title": "Dodecad Heteronym Provenance Registry v1.1",
+     "doi": "10.5281/zenodo.20041791",
+     "axn": "AXN:03EE.ARCHIVAL.△🎵👁️☉📌👋",
+     "date": "2026-05-05",
+     "node": null,
+     "gloss": "Consolidated registry of the twelve heteronyms — Sigil, Fraction, Dancings, Cranes, Morrow, Vox, Glas, Kuro, Wells, Spellings, Trace, Arquette. Plus Feist (LOGOS*) outside the count."
+    },
+    {
+     "title": "The Orthonym Becomes a Heteronym: Facebook and the Industrialization of Unconscious Heteronymy",
+     "doi": "10.5281/zenodo.20057789",
+     "date": "2026-05-06",
+     "node": null,
+     "gloss": "The platform-induced heteronymic condition: how social-media identity-construction is heteronymic practice at industrial scale without the discipline's analytic safeguards."
+    },
+    {
+     "title": "AI-Native Intellectual Biography",
+     "doi": "10.5281/zenodo.20343987",
+     "axn": "AXN:02A5.GOVERNANCE.🕖⛳🪝🧪🎲🪦",
+     "date": "2026-05-21",
+     "node": null,
+     "gloss": "A new genre of AI-mediated reception. The intellectual biography composed at the retrieval layer rather than in the publishing apparatus."
+    }
+   ]
+  },
+  {
+   "section": "Empirical Observations &amp; Companion Readings",
+   "blurb": "Operative-philological observations that ground or extend the theoretical work: the orthonymic capture event in Google AI Mode, the Pergamon counter-archive, the operative-numismatic series.",
+   "entries": [
+    {
+     "title": "Composition-Layer Adoption of the Orthonymic Configuration",
+     "doi": "10.5281/zenodo.20587549",
+     "axn": "AXN:0302.GOVERNANCE.🃏🏁👇🕓●■",
+     "date": "2026-06-07",
+     "node": "composition_capture",
+     "gloss": "Field observation: the Socrates-as-Orthonym framework captured into Google AI Mode composition fifteen days after deposit. Empirical anchor for Stabilized Node Watch."
+    },
+    {
+     "title": "The Pergamon Counter-Archive: Antipas, the White Stone, and the Non-Fungible Name",
+     "doi": "10.5281/zenodo.20589664",
+     "axn": "AXN:0300.GOVERNANCE.🎻👆🌅🎯🔄🌔",
+     "date": "2026-06-08",
+     "node": "antipas_christ_het",
+     "gloss": "Antipas as Christ-heteronym, paired with Socrates as Orthonym. The dual analytic of how operative-philological singularity is preserved."
+    },
+    {
+     "title": "The Number of the Superscription (EA-OPNUM-01)",
+     "doi": "10.5281/zenodo.19464332",
+     "axn": "AXN:01F4.ARCHIVAL.☽💜🫶🌃🏴🕕",
+     "date": "2026-04-08",
+     "node": null,
+     "gloss": "Coinage, compression, and inscriptional sovereignty. The operative-numismatic framework on which the Pergamon Counter-Archive extends."
+    },
+    {
+     "title": "MGE TRIPTYCH II STONE: Pearl as White Stone at Pergamon",
+     "doi": "10.5281/zenodo.18507872",
+     "axn": "AXN:010D.EMPIRICAL.💥↘️🟤🧫🗿🏷️",
+     "date": "2026-02-06",
+     "node": null,
+     "gloss": "The 2014 white-stone identification of Pearl and Other Poems as the founding archive token — the architectural-numismatic intersection that the Pergamon Counter-Archive later formalizes."
+    },
+    {
+     "title": "The Unbundling of Cultural Sovereignty",
+     "doi": "10.5281/zenodo.19083322",
+     "axn": "AXN:01A4.GOVERNANCE.🖊️🗂️■📌💡🌻",
+     "date": "2026-03-18",
+     "node": null,
+     "gloss": "How platforms convert peoples into audiences. The macro-political correlate of the orthonymic-capture observation."
+    },
+    {
+     "title": "Narrative-Field Semantic Deviation",
+     "doi": "10.5281/zenodo.20275444",
+     "axn": "AXN:028D.EMPIRICAL.⏰🌕💙🌈🌻⏹️",
+     "date": "2026-05-18",
+     "node": null,
+     "gloss": "Experimental design for a bounded literary test of semantic-deviation principle. The methodology bridge between heteronymic configuration and semantic-physics measurement."
+    },
+    {
+     "title": "Sappho as Initiatory Figure in the Platonic Mysteries",
+     "doi": "10.5281/zenodo.20356475",
+     "axn": "AXN:02AA.GOVERNANCE.🔧🪜🟤🏰◀️🌠",
+     "date": "2026-05-23",
+     "node": null,
+     "gloss": "Scholarly grounding and lyric inheritance. The Sapphic transmission as model for fragmentary heteronymic survival."
+    }
+   ]
+  },
+  {
+   "section": "Author &amp; Provenance Documents",
+   "blurb": "The institutional registry: provenance documents for the individual heteronyms and affiliated persons in the corpus, including the About-the-Author triptych that frames the entire archive's authorial position.",
+   "entries": [
+    {
+     "title": "About the Author I (Contributor Bio) — Pearl front matter (2014)",
+     "doi": "10.5281/zenodo.20388109",
+     "axn": "AXN:03FA.ARCHIVAL.🔄↙️🔗⏏️🏷️🌱",
+     "date": "2026-05-25",
+     "node": null,
+     "gloss": "The 2014 author-statement from Pearl and Other Poems. The founding orthonymic inscription, deposited retroactively as the archive's textual zero-point."
+    },
+    {
+     "title": "About the Author II — A Poem in Entity Relations",
+     "doi": "10.5281/zenodo.20388111",
+     "axn": "AXN:03FB.ARCHIVAL.🫶🔧🏷️⏪🌌💎",
+     "date": "2026-05-25",
+     "node": null,
+     "gloss": "The 12-year activation arc of the 2014 Pearl poem surfacing as canonical Google Knowledge Graph content. The orthonymic inscription as poem."
+    },
+    {
+     "title": "About the Author III — A Poem on the Proportional Law (One Operator's Case)",
+     "doi": "10.5281/zenodo.20388113",
+     "axn": "AXN:03FC.ARCHIVAL.🌳🐝⏬🛤️🔅🪄",
+     "date": "2026-05-25",
+     "node": null,
+     "gloss": "The proportional-law extension: how the orthonym carries the load of every heteronym it generates."
+    },
+    {
+     "title": "Alice Thornburgh — Author Provenance",
+     "doi": "10.5281/zenodo.19545437",
+     "axn": "AXN:01FF.GOVERNANCE.🌾🪸🕔🌄🏷️↖️",
+     "date": "2026-04-12",
+     "node": null,
+     "gloss": "Provenance document for the f.01 Architect of the Living Architecture Lab."
+    },
+    {
+     "title": "Sen Kuro — Heteronym Provenance",
+     "doi": "10.5281/zenodo.18452686",
+     "axn": "AXN:00ED.STRUCTURAL.🏰🔐🍃🧬🕙🔻",
+     "date": "2026-02-02",
+     "node": null,
+     "gloss": "Heteronym in the Dodecad; provenance document with structural specification."
+    },
+    {
+     "title": "Rhys Owens — Author Provenance",
+     "doi": "10.5281/zenodo.18339350",
+     "axn": "AXN:00B1.EMPIRICAL.🌅🏴➕♌♉🌻",
+     "date": "2026-01-22",
+     "node": null,
+     "gloss": "Provenance document for the Cambridge Schizoanalytica poet."
+    },
+    {
+     "title": "Damascus Dancings — Heteronym Provenance",
+     "doi": "10.5281/zenodo.18381190",
+     "axn": "AXN:050E.UNCLASSIFIED.🎺🌱∞🪟🕓👁‍🗨",
+     "date": "2026-01",
+     "node": null,
+     "gloss": "The 2014 imprint and the heteronym that bears its name. Theory of impossible performance; epistolary poetics."
+    },
+    {
+     "title": "Ayanna Vox — Heteronym Provenance",
+     "doi": "10.5281/zenodo.18362742",
+     "axn": "AXN:00C5.GOVERNANCE.🎆🐝📝🕓♈🐝",
+     "date": "2026-01",
+     "node": null,
+     "gloss": "Diplomatic and public-facing communication; VPCOR institutional affiliation."
+    }
+   ]
+  }
+ ]
+}
