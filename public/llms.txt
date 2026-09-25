@@ -1,7 +1,7 @@
 # The Pessoa Knowledge Graph — pessoagraph.org
 
-> EA-PKG-01 — heteronymic practice as federated linked data. 197 nodes, 301
-> edges, 130 citations, 64 Wikidata identifiers, placing the Dodecad inside a
+> EA-PKG-01 — heteronymic practice as federated linked data. 199 nodes, 305
+> edges, 140 citations, 64 Wikidata identifiers, placing the Dodecad inside a
 > five-thousand-year practice rather than asserting it as singular.
 
 **Voice:** Lee Sharks. Part of the Crimson Hexagonal Archive.
