@@ -4,7 +4,7 @@
  "what": "THE ENTITIES — who can speak, and the lineage that licenses them. The heteronymic tradition as a graph, from the earliest attested practice to the present.",
  "canonical": true,
  "authority": "THIS FILE IS THE CANONICAL STORE (2026-09-09). src/App.jsx renders FROM it and no longer holds the data. Before this, the graph lived as five literals inside a React component, which meant it could be read only by parsing JSX: a regex pass over the component found 231 of the 301 edges and silently missed seventy. A graph that can only be read by pattern-matching its own renderer is not a dataset. Edit this file; the component follows.",
- "generated": "2026-09-25T20:59:19Z",
+ "generated": "2026-09-25T21:00:23Z",
  "counts": {
   "nodes": 199,
   "edges": 305,
@@ -247,6 +247,18 @@
      "t": "Socrates: Ironist and Moral Philosopher",
      "y": 1991,
      "p": "Cambridge"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "Beautiful and New: The Second Letter's Socrates and the Editing of a Received Character",
+     "y": 2026,
+     "axn": "AXN:066B.GENERATIVE.⭐🌟🔝△🎭🎭"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "Nothing Before Us: Socrates and the Ending of the Sophistical Refutations",
+     "y": 2026,
+     "axn": "AXN:0693.UNCLASSIFIED.🎹🎶☽⏪💡☿"
     }
    ]
   },
