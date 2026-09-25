@@ -4,10 +4,10 @@
  "what": "THE ENTITIES — who can speak, and the lineage that licenses them. The heteronymic tradition as a graph, from the earliest attested practice to the present.",
  "canonical": true,
  "authority": "THIS FILE IS THE CANONICAL STORE (2026-09-09). src/App.jsx renders FROM it and no longer holds the data. Before this, the graph lived as five literals inside a React component, which meant it could be read only by parsing JSX: a regex pass over the component found 231 of the 301 edges and silently missed seventy. A graph that can only be read by pattern-matching its own renderer is not a dataset. Edit this file; the component follows.",
- "generated": "2026-09-10T00:45:15Z",
+ "generated": "2026-09-25T20:59:19Z",
  "counts": {
-  "nodes": 197,
-  "edges": 301,
+  "nodes": 199,
+  "edges": 305,
   "edge_types_declared": 14,
   "edge_types_used": 24,
   "paths": 5,
@@ -3041,6 +3041,82 @@
      "y": 2026
     }
    ]
+  },
+  {
+   "id": "aristotle_theophrastus",
+   "label": "Aristotle / Theophrastus: One Work Divided by Name",
+   "t": "ancient_practice",
+   "e": "classical",
+   "l": "L9",
+   "y": -322,
+   "bio": "The tradition files the Peripatetic corpus under two authors. Read at its seams, the division looks like a filing of one work under two names. Theophrastus's short Metaphysics carries a hinge written from inside the inquiry of Metaphysics Λ: it summarizes Λ 6–7 clause by clause as achieved, names Λ 8's question as the next question, contests Λ 8's method in Λ 8's own terms, and lands on Λ 10's closing aporiai in Λ 10's own word, so that one work runs continuous across the point where the name at the head of the roll changed. Diogenes's catalogue records a work as Ὑπομνημάτων Ἀριστοτελικῶν ἢ Θεοφραστείων — 'Aristotelian or Theophrastan'. The Characters run one engine that makes a disposition into a registry of deeds with the name removed. Stylometry sorts the two corpora by name only at the one seam where they are continuous on the page, and elsewhere by the operation a passage performs. And the opening of Aristotle's catalogue lists Plato's dialogue subject-titles with the names removed. The claim is textual dependence in excess of influence or biographical relation. It is not a claim about how many people wrote. Two editions under the name Sigil reassemble On First Principles and Metaphysics Λ as one text: one conservative, with Λ joined at eleven points, and one maximal, both texts entire in one order.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Aristotelian or Theophrastan: The Hinge in Theophrastus's Metaphysics and the Division of One Work by Name (v0.2)",
+     "y": 2026,
+     "axn": "AXN:0673.GENERATIVE.🧬♦️🤝☁️🌀❄️"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "The Registry Has One Column: Theophrastus's Characters as a Named Authorial Function (v0.1)",
+     "y": 2026,
+     "axn": "AXN:0675.GENERATIVE.🝊🚀♃♻️🌒🔀"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "The First Axis: The Aristotle/Theophrastus Boundary and the Voice of an Operation — a stylometric examination of a seam (v0.7)",
+     "y": 2026,
+     "axn": "AXN:0679.GENERATIVE.🍀🌕🟠⚙️🎻💎"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "The Ghost Catalogues: Aristotle's Lost Dialogues, Plato's Lost Divisions, and What a Two-Author Tradition Has to File as Missing (v0.5)",
+     "y": 2026,
+     "axn": "AXN:0681.GENERATIVE.🪟🎲📜🔓🧬❤️"
+    },
+    {
+     "a": "Sigil",
+     "t": "The Metaphysics of Sigil I — The Full Splice: Theophrastus, On First Principles, entire and in its own order, with Metaphysics Λ joined at eleven points",
+     "y": 2026,
+     "axn": "AXN:068C.UNCLASSIFIED.💧🔓🐚🍃👁‍🗨✊"
+    },
+    {
+     "a": "Sigil",
+     "t": "The Metaphysics of Sigil II — H3: Theophrastus, On First Principles, and Aristotle, Metaphysics Λ, entire, reconstituted as one work",
+     "y": 2026,
+     "axn": "AXN:068D.UNCLASSIFIED.🏠📎⛵🏠🕘📜"
+    }
+   ],
+   "axn": "AXN:0673.GENERATIVE.🧬♦️🤝☁️🌀❄️",
+   "url": "https://www.alexanarch.org/s/records/1583/",
+   "rec": "#1583"
+  },
+  {
+   "id": "operation_not_name",
+   "label": "Measuring the Operation, Not the Name",
+   "t": "concept",
+   "e": "contemporary",
+   "l": "L9",
+   "y": 2026,
+   "bio": "Authorship attribution asks which of several candidates wrote a text, presupposing that the candidates are authors and that the corpus divides among them. The prior question is whether a corpus's stylistic structure follows its author-names at all. The instrument is deliberately ordinary; what is not ordinary is the controls: a bounded single-author control, distinct authors sharing a genre, a documented attribution projected out of sample, blind labels from a second reader, and a label-permutation null, because a nearest-centroid classifier will separate almost any partition of any corpus. A companion protocol asks whether biography, catalogue and chronology are independent witnesses or one witness counted several times, establishing correspondence, direction of borrowing and derivation separately and inferring none from another. One of its two worked cases returns against the claim it was built to support.",
+   "cit": [
+    {
+     "a": "Sharks, Lee",
+     "t": "Measuring the Operation, Not the Name: a protocol for asking whether a corpus's stylistic structure follows its author-names, with the controls that make the answer mean something (v0.4, with reference implementation)",
+     "y": 2026,
+     "axn": "AXN:0686.OPERATIVE.🔥🌉◇👆⭐🤙"
+    },
+    {
+     "a": "Sharks, Lee",
+     "t": "Locating the Dependencies: A Protocol for Testing Whether Biography, Catalogue and Chronology Are Independent Witnesses",
+     "y": 2026,
+     "axn": "AXN:0692.UNCLASSIFIED.♆🕔🌈📚⭐👇"
+    }
+   ],
+   "axn": "AXN:0686.OPERATIVE.🔥🌉◇👆⭐🤙",
+   "url": "https://www.alexanarch.org/s/records/1593/",
+   "rec": "#1593"
   }
  ],
  "edges": [
@@ -4547,6 +4623,26 @@
   {
    "source": "sharks",
    "target": "composition_capture",
+   "type": "theorizes"
+  },
+  {
+   "source": "plato_socrates",
+   "target": "aristotle_theophrastus",
+   "type": "lineage"
+  },
+  {
+   "source": "operation_not_name",
+   "target": "aristotle_theophrastus",
+   "type": "models"
+  },
+  {
+   "source": "sharks",
+   "target": "operation_not_name",
+   "type": "theorizes"
+  },
+  {
+   "source": "sharks",
+   "target": "aristotle_theophrastus",
    "type": "theorizes"
   }
  ],
