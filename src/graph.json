@@ -4,10 +4,10 @@
  "what": "THE ENTITIES — who can speak, and the lineage that licenses them. The heteronymic tradition as a graph, from the earliest attested practice to the present.",
  "canonical": true,
  "authority": "THIS FILE IS THE CANONICAL STORE (2026-09-09). src/App.jsx renders FROM it and no longer holds the data. Before this, the graph lived as five literals inside a React component, which meant it could be read only by parsing JSX: a regex pass over the component found 231 of the 301 edges and silently missed seventy. A graph that can only be read by pattern-matching its own renderer is not a dataset. Edit this file; the component follows.",
- "generated": "2026-09-25T21:00:23Z",
+ "generated": "2026-10-10T12:54:17Z",
  "counts": {
-  "nodes": 199,
-  "edges": 305,
+  "nodes": 200,
+  "edges": 308,
   "edge_types_declared": 14,
   "edge_types_used": 24,
   "paths": 5,
@@ -890,6 +890,12 @@
      "t": "O Ano da Morte de Ricardo Reis",
      "y": 1984,
      "p": "Caminho"
+    },
+    {
+     "a": "Pessoa, F.; Hidalgo Nácher, M. (trad., epíl.)",
+     "t": "Obras completas de Ricardo Reis",
+     "y": 2025,
+     "p": "Pre-Textos"
     }
    ]
   },
@@ -3129,6 +3135,29 @@
    "axn": "AXN:0686.OPERATIVE.🔥🌉◇👆⭐🤙",
    "url": "https://www.alexanarch.org/s/records/1593/",
    "rec": "#1593"
+  },
+  {
+   "id": "nacher",
+   "label": "Max Hidalgo Nácher",
+   "t": "scholar",
+   "e": "contemporary",
+   "l": "L5",
+   "y": 2025,
+   "bio": "Spanish translator of Ricardo Reis; translation and epilogue of the Obras completas de Ricardo Reis (Pre-Textos, 2025), ed. Pizarro and Uribe. Literary theory and comparative literature, Universitat de Barcelona. Entered 2026-10-10 by the erratum on AXN:F154 (#1675).",
+   "cit": [
+    {
+     "a": "Pessoa, F.; Hidalgo Nácher, M. (trad., epíl.)",
+     "t": "Obras completas de Ricardo Reis",
+     "y": 2025,
+     "p": "Pre-Textos"
+    },
+    {
+     "a": "Hidalgo Nácher, M.",
+     "t": "Arqueologías de la traducción de Ricardo Reis",
+     "y": 2026,
+     "p": "Pessoa Plural"
+    }
+   ]
   }
  ],
  "edges": [
@@ -4656,6 +4685,21 @@
    "source": "sharks",
    "target": "aristotle_theophrastus",
    "type": "theorizes"
+  },
+  {
+   "source": "reis",
+   "target": "nacher",
+   "type": "translated_by"
+  },
+  {
+   "source": "nacher",
+   "target": "reis",
+   "type": "studied_by"
+  },
+  {
+   "source": "nacher",
+   "target": "haroldo",
+   "type": "studied_by"
   }
  ],
  "paths": [
